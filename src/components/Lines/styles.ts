@@ -1,3 +1,7 @@
 import styled from "styled-components";
 
-export const LinesGif = styled.svg``;
+export const LinesGif = styled.svg`
+    
+`;
+
+    

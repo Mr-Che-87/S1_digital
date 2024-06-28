@@ -28,17 +28,18 @@ const MainPage = () => {
   return (
     <MainBox>
       <HeaderMain />
-      <Lines/>
-      {/* <AbsoluteBackground></AbsoluteBackground> */}
+      <AbsoluteBackground>
+        <Lines/>
+      </AbsoluteBackground>
       <Wrapper>
         <Heading />
         <WeDoing />
-        <Services />
-        <Cases />
+        {/*<Services />*/}
+        {/*<Cases />*/}
         <Team />
         <Blog />
         {/* <Education /> */}
-        <Internship />
+        {/*<Internship /> */}
         <Trust />
       </Wrapper>
       <Footer />
