@@ -15,7 +15,7 @@ const CasesPage = () => {
     <main>
       <HeaderMain />
       <CasesTitleBox>
-        <CasesTitle>Наши кейсы</CasesTitle>
+        <CasesTitle>Наши проекты</CasesTitle>
         <CasesItemsBox>
           {caseData.map((item, index) => (
             <CaseBlock

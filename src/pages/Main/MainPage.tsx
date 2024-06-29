@@ -3,6 +3,7 @@ import Cases from "../../components/Cases/Cases";
 import Education from "./Components/Education/Education";
 import HeaderMain from "../../components/Header/HeaderMain";
 import Heading from "./Components/Heading/Heading";
+import Welcome from "./Components/Welcome/Welcome";
 import Services from "../../components/Services/Services";
 import Team from "./Components/Team/Team";
 import { AbsoluteBackground, MainBox } from "./styles";
@@ -33,6 +34,7 @@ const MainPage = () => {
       </AbsoluteBackground>
       <Wrapper>
         <Heading />
+        < Welcome />
         <WeDoing />
         {/*<Services />*/}
         {/*<Cases />*/}

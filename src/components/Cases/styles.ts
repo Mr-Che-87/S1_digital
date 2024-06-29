@@ -3,7 +3,7 @@ export const CasesBox = styled.section`
   margin-top: 60px;
 `;
 export const CasesTitleBox = styled.div`
-  background-image: url("/images/CasesBackground.svg");
+  background-image: url("/images/сasesBackground.svg");
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;

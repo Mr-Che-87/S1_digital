@@ -12,7 +12,7 @@ const Cases = () => {
   return (
     <CasesBox>
       <CasesTitleBox>
-        <CasesTitle>Наши кейсы</CasesTitle>
+        <CasesTitle>Наши проекты</CasesTitle>
       </CasesTitleBox>
       <CasesItemsBox>
         {caseData.map((item, index) => (
