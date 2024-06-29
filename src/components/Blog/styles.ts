@@ -1,14 +1,14 @@
 import styled from "styled-components";
 export const BlogBox = styled.section`
-  margin-top: 180px;
+  margin-top: 60px;
 `;
 export const BlogTitleBox = styled.div`
   background-image: url("./images/blogBackground.svg");
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  margin-bottom: 60px;
-  margin-top: 180px;
+  margin-bottom: 180px;
+  margin-top: 60px;
 `;
 export const BlogTitle = styled.h2`
   padding-top: 130px;

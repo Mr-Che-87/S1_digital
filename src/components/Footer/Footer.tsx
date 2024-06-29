@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import { Link } from "react-router-dom";
 import styled from "styled-components"; // Импортируем styled-components
 import BehanceLink from "../BehanceLink/BehanceLink";
@@ -25,6 +28,14 @@ import {
 } from "./styles";
 
 const Footer = () => {
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [pathname]);
+
+
   return (
     <FooterBlock id="footer">
       <LogoContainer>

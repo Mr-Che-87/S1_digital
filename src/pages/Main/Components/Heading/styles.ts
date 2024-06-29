@@ -16,7 +16,7 @@ export const HeadingSpan = styled.span`
   -webkit-text-fill-color: transparent;
 `;
 export const HeadingTitle = styled.h1`
-  margin-top: 180px;
+  margin-top: 120px;
   font-family: "OpenSansBold";
   line-height: 68px;
   padding-left: calc(50% - 690px);

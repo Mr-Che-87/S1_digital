@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const ServicesBox = styled.section``;
 export const ServicesTitleBox = styled.div`
-  margin-top: 180px;
+  margin-top: 60px;
   background-image: url("/images/servicesBackground.svg");
   background-position: center;
   background-repeat: no-repeat;

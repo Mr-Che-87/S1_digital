@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const CasesBox = styled.section`
-  margin-top: 180px;
+  margin-top: 60px;
 `;
 export const CasesTitleBox = styled.div`
   background-image: url("/images/CasesBackground.svg");
@@ -8,7 +8,7 @@ export const CasesTitleBox = styled.div`
   background-repeat: no-repeat;
   text-align: center;
   margin-bottom: 80px;
-  margin-top: 180px;
+  margin-top: 60px;
 `;
 export const CasesTitle = styled.h2`
   padding-top: 138px;
