@@ -4,7 +4,9 @@ import styled from "styled-components";
 //   StopStart,
 //   StopSvg,
 // } from "../../../../components/VkLink/styles";
-export const WelcomeBox = styled.section``;
+export const WelcomeBox = styled.section`
+background-image: url("/images/welcomeBackground.png");
+`;
 
 export const WelcomeTitle = styled.h1`
   margin-top: 120px;
