@@ -3,8 +3,6 @@ export const MainBox = styled.main`
   position: relative;
 `;
 
-
-
 export const AbsoluteBackground = styled.div`
   z-index: -100;
   position: absolute;
@@ -16,3 +14,9 @@ export const AbsoluteBackground = styled.div`
   //background-position: center;
   top: 400px;
 `;
+
+
+// export const Lines = styled.div`
+// width: 100%;
+// padding-right: 500px;
+// `;
