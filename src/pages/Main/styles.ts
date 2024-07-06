@@ -7,9 +7,9 @@ export const AbsoluteBackground = styled.div`
   position: absolute;
   width: 100%;
   height: 1222px;
-  background-image: url(./images/background.svg);
-  background-repeat: no-repeat;
-  background-size: 110%;
-  background-position: center;
+  //background-image: url(./images/background.svg);
+  //background-repeat: no-repeat;
+  //background-size: 110%;
+  //background-position: center;
   top: 400px;
 `;
