@@ -1,6 +1,8 @@
 import styled from "styled-components";
 export const TrustBox = styled.section`
   margin-top: 210px;
+  padding-left: calc(50% - 590px);
+  padding-right: calc(50% - 590px);
 `;
 export const TrustTitleBox = styled.div`
   background-image: url("/images/trustBackground.svg");

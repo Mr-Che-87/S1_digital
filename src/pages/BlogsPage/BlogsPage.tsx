@@ -4,6 +4,7 @@ import {
   BlogText,
   BlogTitle,
   BlogTitleBox,
+  BlogBox
 } from "../../components/Blog/styles";
 import BlogBlock from "../../components/BlogItem/BlogBlock";
 import Footer from "../../components/Footer/Footer";
@@ -14,7 +15,7 @@ const BlogsPage = () => {
   return (
     <main>
       <HeaderMain />
-      
+      <BlogBox>
       <BlogTitleBox>
         <BlogTitle>Блог</BlogTitle>
       </BlogTitleBox>
@@ -35,6 +36,7 @@ const BlogsPage = () => {
           />
         ))}
       </BlogItemsBox>
+      </BlogBox>
       <Footer />
     </main>
   );

@@ -2,6 +2,9 @@ import styled from "styled-components";
 export const MainBox = styled.main`
   position: relative;
 `;
+
+
+
 export const AbsoluteBackground = styled.div`
   z-index: -100;
   position: absolute;

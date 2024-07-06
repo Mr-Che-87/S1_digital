@@ -1,10 +1,10 @@
 import {
   WelcomeBox,
   WelcomeBackground,
+  WelcomeContent,
   WelcomeTitle,
   WelcomeDescriptionBox,
   WelcomeDescription,
-  WelcomeContent,
 } from "./styles";
 
 const  Welcome = () => {
@@ -21,11 +21,13 @@ const  Welcome = () => {
           <WelcomeDescription>
           Мы - маркетинговое AI-агентство, которое использует передовые технологии с использованием нейросети, чтобы помочь вашему бизнесу достичь новых высот!
           <br />
+          <br />
           Мы предлагаем уникальное решение, которое загрузит ваш отдел продаж «под крышку» и обеспечит максимальную эффективность в продвижении и привлечении клиентов.
           </WelcomeDescription>
         </WelcomeDescriptionBox>
+      </WelcomeContent>  
       
-      </WelcomeContent>
+     
     </WelcomeBox>
   );
 };

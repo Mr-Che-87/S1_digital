@@ -1,6 +1,8 @@
 import styled from "styled-components";
 export const WeDoBox = styled.section`
   margin-top: 532px;
+  padding-left: calc(50% - 590px);
+  padding-right: calc(50% - 590px);
 `;
 export const WeDoTitleBox = styled.div`
   background-image: url("/images/WeDoBackGround.svg");

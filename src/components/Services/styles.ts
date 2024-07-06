@@ -1,5 +1,10 @@
 import styled from "styled-components";
-export const ServicesBox = styled.section``;
+export const ServicesBox = styled.section`
+  padding-left: calc(50% - 590px);
+  padding-right: calc(50% - 590px);
+`;
+
+
 export const ServicesTitleBox = styled.div`
   margin-top: 60px;
   background-image: url("/images/servicesBackground.svg");

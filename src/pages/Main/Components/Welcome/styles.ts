@@ -1,3 +1,4 @@
+// styles.ts:
 import styled from "styled-components";
 
 export const WelcomeBox = styled.section`
@@ -9,15 +10,15 @@ export const WelcomeBox = styled.section`
 `;
 
 export const WelcomeContent = styled.div`
-  padding-left: calc(50% - 470px);
-  padding-right: calc(50% - 601px);
+  padding-left: calc(50% - 590px);
+  padding-right: calc(50% - 590px); 
 `;
 
 export const WelcomeBackground = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background-image: url("/images/welcomeBackground.png");
   background-position: center;
@@ -27,7 +28,7 @@ export const WelcomeBackground = styled.div`
 `;
 
 export const WelcomeTitle = styled.h1`
-  margin-top: 120px;
+  margin-top: 86px;
   font-family: "OpenSansBold";
   line-height: 68px;
   color: white;
@@ -36,7 +37,8 @@ export const WelcomeTitle = styled.h1`
 export const WelcomeDescriptionBox = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
+  margin-top: 27px;
+  margin-bottom: 157px;
 `;
 
 export const WelcomeDescription = styled.div`
@@ -44,6 +46,7 @@ export const WelcomeDescription = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   color: white;
+  width: 580px;
 `;
 
 

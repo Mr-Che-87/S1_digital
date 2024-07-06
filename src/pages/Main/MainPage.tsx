@@ -1,3 +1,9 @@
+import { 
+  AbsoluteBackground, 
+  MainBox,
+} from "./styles";
+
+
 import Blog from "../../components/Blog/Blog";
 import Cases from "../../components/Cases/Cases";
 import Education from "./Components/Education/Education";
@@ -6,7 +12,6 @@ import Heading from "./Components/Heading/Heading";
 import Welcome from "./Components/Welcome/Welcome";
 import Services from "../../components/Services/Services";
 import Team from "./Components/Team/Team";
-import { AbsoluteBackground, MainBox } from "./styles";
 import Internship from "./Components/Internship/Internship";
 import WeDoing from "./Components/WeDoing/WeDoing";
 import Trust from "./Components/Trust/Trust";
@@ -28,10 +33,12 @@ const MainPage = () => {
 
   return (
     <MainBox>
+      
       <HeaderMain />
       <AbsoluteBackground>
         <Lines/>
       </AbsoluteBackground>
+
       <Wrapper>
         <Heading />
         < Welcome />

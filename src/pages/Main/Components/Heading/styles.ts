@@ -4,7 +4,12 @@ import {
   StopStart,
   StopSvg,
 } from "../../../../components/VkLink/styles";
-export const HeadingBox = styled.section``;
+
+export const HeadingBox = styled.section`
+padding-left: calc(50% - 590px);
+padding-right: calc(50% - 590px);
+`; 
+
 export const HeadingSpan = styled.span`
   font-size: 96px;
   font-style: normal;
@@ -64,7 +69,7 @@ export const VkBlock = styled.div`
   -webkit-background-clip: text;
   display: flex;
   align-items: center;
-  width: 145px;
+  //width: 145px;
   gap: 10px;
   text-transform: uppercase;
   &:hover {

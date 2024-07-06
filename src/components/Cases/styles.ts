@@ -1,6 +1,8 @@
 import styled from "styled-components";
 export const CasesBox = styled.section`
   margin-top: 60px;
+  padding-left: calc(50% - 590px);   /////////ПОДПРАВИТЬ РАЗМЕР ПЕРВОЙ КАРТИНКИ "ореховно"
+  padding-right: calc(50% - 590px); 
 `;
 export const CasesTitleBox = styled.div`
   background-image: url("/images/сasesBackground.svg");

@@ -1,6 +1,7 @@
 import Button from "../../components/Button/Button";
 import CaseBlock from "../../components/CaseBlock/CaseBlock";
 import {
+  CasesBox,
   CasesButtonBox,
   CasesItemsBox,
   CasesTitle,
@@ -14,6 +15,7 @@ const CasesPage = () => {
   return (
     <main>
       <HeaderMain />
+      <CasesBox>
       <CasesTitleBox>
         <CasesTitle>Наши проекты</CasesTitle>
         <CasesItemsBox>
@@ -33,6 +35,7 @@ const CasesPage = () => {
           </Button>
         </CasesButtonBox>
       </CasesTitleBox>
+      </CasesBox>
       <Footer />
     </main>
   );

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 export const BlogBox = styled.section`
   margin-top: 60px;
+  padding-left: calc(50% - 620px);
+  padding-right: calc(50% - 620px);
 `;
 export const BlogTitleBox = styled.div`
   background-image: url("./images/blogBackground.svg");

@@ -76,7 +76,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 export const Wrapper = styled.div`
-  padding-left: calc(50% - 470px);
-  padding-right: calc(50% - 601px);
+//padding-left: calc(50% - 590px);
+//padding-right: calc(50% - 590px);
   margin-bottom: 180px;
 `;
