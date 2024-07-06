@@ -20,7 +20,7 @@ export const HeadingTitle = styled.h1`
   font-family: "OpenSansBold";
   line-height: 68px;
   padding-left: calc(50% - 690px);
-  padding-right: calc(50% - 273px);
+  padding-right: calc(50% - 50vw);
   text-transform: none;
 `;
 export const HeadingSubTitle = styled.h1`
@@ -38,20 +38,26 @@ export const HeadingDescriptionBox = styled.div`
 `;
 export const HeadingDescription = styled.div`
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  
+  justify-content: space-around;
+  flex-wrap: wrap;  
 `;
 export const HeadingServicesBox = styled.div`
-  padding-left: 140px;
+  //padding-left: 140px;
   display: flex;
   gap: 40px;
   font-size: 24px;
   align-items: baseline;
 `;
-export const ServicesDescription = styled.div`
-  margin-top: 20px;
-  max-width: 400px;
+
+export const HeadingDescription2 = styled.div`
+  margin-top: 165px;
+  margin-bottom: 170px;
+  //padding-left: 140px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  font-size: 24px;
+  align-items: end;
 `;
 export const VkBlock = styled.div`
   background-clip: text;
@@ -86,3 +92,8 @@ export const VkBlock = styled.div`
     }
   }
 `;
+export const ServicesDescription = styled.p`
+  margin-top: 20px;
+  max-width: 400px;
+`;
+

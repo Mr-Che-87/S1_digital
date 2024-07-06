@@ -9,6 +9,7 @@ import {
   HeadingSubTitle,
   HeadingTitle,
   HeadingServicesBox,
+  HeadingDescription2,
   ServicesDescription,
   VkBlock,
 } from "./styles";
@@ -21,17 +22,25 @@ const Heading = () => {
   return (
     <HeadingBox>
       <HeadingTitle>
-        <HeadingSpan>S1 DIGITAL</HeadingSpan> – агентство
+        <HeadingSpan>S1 DIGITAL</HeadingSpan> &mdash; агентство
       </HeadingTitle>
       <HeadingSubTitle>комплексного маркетинга</HeadingSubTitle>
+
       <HeadingDescriptionBox>
         <HeadingDescription>
-          <HeadingServicesBox>
-            <p>выводим бизнес на новый уровень прибыли</p>
-            <Button type="bold" variant="short" handler={handler}>
-              Наши услуги
-            </Button>
-          </HeadingServicesBox>
+            <HeadingServicesBox>
+              <p>Загрузим ваш отдел продаж</p>
+              <Button type="bold" variant="short" handler={handler}>
+                Наши услуги
+              </Button>
+            </HeadingServicesBox>
+          </HeadingDescription>
+          
+          <HeadingDescription2>
+          <VkBlock as={Link} to={"https://m.vk.com/s1digital"}>
+          <VkLink />
+          <span>S1 digital</span>
+        </VkBlock>
           <div>
             <p>Привет! Мы S1 Digital - агенство</p>
             <ServicesDescription>
@@ -40,11 +49,8 @@ const Heading = () => {
               бренда, улучшаем работу отдела продаж.
             </ServicesDescription>
           </div>
-        </HeadingDescription>
-        <VkBlock as={Link} to={"https://m.vk.com/s1digital"}>
-          <VkLink />
-          <span>S1 digital</span>
-        </VkBlock>
+          </HeadingDescription2>
+              
       </HeadingDescriptionBox>
     </HeadingBox>
   );

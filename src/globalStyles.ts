@@ -76,7 +76,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 export const Wrapper = styled.div`
-  padding-left: calc(50% - 581px);
+  padding-left: calc(50% - 470px);
   padding-right: calc(50% - 601px);
   margin-bottom: 180px;
 `;

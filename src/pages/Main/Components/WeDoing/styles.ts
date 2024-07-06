@@ -6,6 +6,7 @@ export const WeDoTitleBox = styled.div`
   background-image: url("/images/WeDoBackGround.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   text-align: center;
 `;
 export const WeDoTitle = styled.h2`
