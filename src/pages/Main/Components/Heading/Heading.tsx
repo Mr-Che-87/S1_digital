@@ -21,7 +21,7 @@ const Heading = () => {
   return (
     <HeadingBox>
       <HeadingTitle>
-        <HeadingSpan>S1 digital</HeadingSpan> - агенство
+        <HeadingSpan>S1 DIGITAL</HeadingSpan> – агентство
       </HeadingTitle>
       <HeadingSubTitle>комплексного маркетинга</HeadingSubTitle>
       <HeadingDescriptionBox>

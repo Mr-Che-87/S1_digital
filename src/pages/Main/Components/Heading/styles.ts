@@ -21,13 +21,15 @@ export const HeadingTitle = styled.h1`
   line-height: 68px;
   padding-left: calc(50% - 690px);
   padding-right: calc(50% - 273px);
+  text-transform: none;
 `;
 export const HeadingSubTitle = styled.h1`
-  margin-top: 40px;
+  margin-top: 0px;
   font-family: "OpenSansBold";
   line-height: 68px;
   padding-left: calc(50% - 550px);
   padding-right: calc(50% - 800px);
+  text-transform: none;
 `;
 export const HeadingDescriptionBox = styled.div`
   display: flex;
@@ -38,6 +40,7 @@ export const HeadingDescription = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  
 `;
 export const HeadingServicesBox = styled.div`
   padding-left: 140px;
