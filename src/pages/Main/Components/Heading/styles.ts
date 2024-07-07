@@ -56,7 +56,7 @@ export const HeadingServicesBox = styled.div`
 
 export const HeadingDescription2 = styled.div`
   margin-top: 165px;
-  margin-bottom: 170px;
+  margin-bottom: 520px;
   //padding-left: 140px;
   display: flex;
   justify-content: space-between;
