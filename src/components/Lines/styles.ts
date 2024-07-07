@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
 export const LinesGif = styled.svg`
-  width: 100%;
-  height: 100%;
-  display: block; /* Убирает отступы */
-  position: relative; /* Для управления позиционированием */
+   
+position: absolute;
+z-index: -10;
+top: 860px;
+left: 0; 
+width: 100%;
+height: auto; 
 `;
     

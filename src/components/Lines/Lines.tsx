@@ -1,5 +1,6 @@
 import { usePathAnimation } from "../../services/utils/animationSpringLine";
 import { animated } from "react-spring";
+import { LinesGif } from "./styles";  
 
 const AnimatedPath = animated.path;
 
@@ -113,13 +114,13 @@ const Lines = () => {
     alternateTargetD.line9
   );
   return (
-    <svg
-      width="1920"
-      height="2049"
-      viewBox="0 0 1920 2049"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <LinesGif
+    width="100%"
+    height="auto"
+    viewBox="0 0 1920 2049"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
       <AnimatedPath
         opacity="0.111111"
         d={pathAnimation1.d}
@@ -283,7 +284,7 @@ const Lines = () => {
           <stop offset="1" stop-color="#8B4BED" />
         </linearGradient>
       </defs>
-    </svg>
+    </LinesGif>
   );
 };
 
