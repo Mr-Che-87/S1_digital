@@ -1,13 +1,11 @@
 import styled from "styled-components";
-export const HeaderNav = styled.nav`
-  display: flex;
-  column-gap: 20px;
-  flex-wrap: wrap;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 120%;
-  text-transform: uppercase;
+
+export const Shell = styled.div`
+  background: ${({ theme }) => theme.colors.gradient};
+  position: relative;
+  padding: 1px;
 `;
+
 export const Header = styled.header`
   display: flex;
   align-items: center;
@@ -19,8 +17,16 @@ export const Header = styled.header`
   padding-top: 20px;
   padding-bottom: 20px;
 `;
-export const Shell = styled.div`
-  background: ${({ theme }) => theme.colors.gradient};
-  position: relative;
-  padding: 1px;
+
+
+
+
+export const HeaderNav = styled.nav`
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
 `;

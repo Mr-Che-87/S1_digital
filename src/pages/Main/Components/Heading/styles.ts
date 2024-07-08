@@ -6,6 +6,8 @@ import {
 } from "../../../../components/VkLink/styles";
 
 export const HeadingBox = styled.section`
+margin-left: 10px;
+margin-right: 10px;
 padding-left: calc(50% - 590px);
 padding-right: calc(50% - 590px);
 `; 
@@ -21,21 +23,22 @@ export const HeadingSpan = styled.span`
   -webkit-text-fill-color: transparent;
 `;
 export const HeadingTitle = styled.h1`
+  padding-left: calc(50% - 490px);
+  padding-right: calc(50% - 50vw); 
   margin-top: 120px;
   font-family: "OpenSansBold";
   line-height: 68px;
-  padding-left: calc(50% - 690px);
-  padding-right: calc(50% - 50vw);
   text-transform: none;
 `;
 export const HeadingSubTitle = styled.h1`
+  padding-left: calc(50% - 490px);
+  padding-right: calc(50% - 50vw); 
   margin-top: 0px;
   font-family: "OpenSansBold";
   line-height: 68px;
-  padding-left: calc(50% - 550px);
-  padding-right: calc(50% - 800px);
   text-transform: none;
 `;
+
 export const HeadingDescriptionBox = styled.div`
   display: flex;
   flex-direction: column;

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 export const WeDoBox = styled.section`
   margin-top: 532px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding-left: calc(50% - 590px);
   padding-right: calc(50% - 590px);
 `;

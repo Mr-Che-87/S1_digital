@@ -12,6 +12,7 @@ export const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-left: 10px;
 `;
 export const FooterTopBlock = styled.div`
   display: flex;
@@ -33,6 +34,7 @@ export const InfoAddressesBox = styled.div`
 export const LogoContainer = styled.div`
   padding-right: 40px;
   padding-top: 127px;
+  margin-left: 10px;
 `;
 export const FooterInfoBlock = styled.div`
   display: flex;

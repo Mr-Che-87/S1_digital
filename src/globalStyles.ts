@@ -78,5 +78,5 @@ export const GlobalStyle = createGlobalStyle`
 export const Wrapper = styled.div`
 //padding-left: calc(50% - 590px);
 //padding-right: calc(50% - 590px);
-  margin-bottom: 180px;
+ margin-bottom: 180px;
 `;

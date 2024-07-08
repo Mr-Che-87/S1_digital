@@ -12,6 +12,8 @@ export const WelcomeBox = styled.section`
 export const WelcomeContent = styled.div`
   padding-left: calc(50% - 590px);
   padding-right: calc(50% - 590px); 
+  margin-left: 10px;
+  margin-right: 10px;
 `;
 
 export const WelcomeBackground = styled.div`
