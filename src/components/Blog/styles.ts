@@ -8,12 +8,13 @@ export const BlogTitleBox = styled.div`
   background-image: url("./images/blogBackground.svg");
   background-position: center;
   background-repeat: no-repeat;
+  //background-size: contain;
   text-align: center;
   margin-bottom: 180px;
-  margin-top: 60px;
+  //margin-top: 60px;
 `;
-export const BlogTitle = styled.h2`
-  padding-top: 130px;
+export const BlogTitle = styled.h1`
+  padding-top: 75px;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: ${({ theme }) => theme.colors.gradient};

@@ -8,12 +8,13 @@ export const TrustTitleBox = styled.div`
   background-image: url("/images/trustBackground.svg");
   background-position: center;
   background-repeat: no-repeat;
+  //background-size: contain;
   text-align: center;
   margin-bottom: 80px;
   margin-top: 180px;
 `;
-export const TrustTitle = styled.h2`
-  padding-top: 100px;
+export const TrustTitle = styled.h1`
+  padding-top: 45px;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: ${({ theme }) => theme.colors.gradient};

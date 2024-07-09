@@ -3,23 +3,22 @@ import {
   MainBox,
 } from "./styles";
 
-
-
-
-import Blog from "../../components/Blog/Blog";
-import Cases from "../../components/Cases/Cases";
-import Education from "./Components/Education/Education";
+import { Wrapper } from "../../globalStyles";
 import HeaderMain from "../../components/Header/HeaderMain";
 import Heading from "./Components/Heading/Heading";
+import Lines from "../../components/Lines/Lines";
 import Welcome from "./Components/Welcome/Welcome";
-import Services from "../../components/Services/Services";
-import Team from "./Components/Team/Team";
-import Internship from "./Components/Internship/Internship";
 import WeDoing from "./Components/WeDoing/WeDoing";
+import Tariffs from "./Components/Tariffs/Tariffs";
+import Team from "./Components/Team/Team";
+import Blog from "../../components/Blog/Blog";
 import Trust from "./Components/Trust/Trust";
 import Footer from "../../components/Footer/Footer";
-import { Wrapper } from "../../globalStyles";
-import Lines from "../../components/Lines/Lines";
+
+// import Cases from "../../components/Cases/Cases";
+// import Education from "./Components/Education/Education";
+// import Services from "../../components/Services/Services";
+// import Internship from "./Components/Internship/Internship";
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -45,6 +44,7 @@ const MainPage = () => {
         <Heading />
         < Welcome />
         <WeDoing />
+        <Tariffs />
         {/*<Services />*/}
         {/*<Cases />*/}
         <Team />

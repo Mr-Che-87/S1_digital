@@ -8,12 +8,13 @@ export const CasesTitleBox = styled.div`
   background-image: url("/images/сasesBackground.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   text-align: center;
   margin-bottom: 80px;
   margin-top: 60px;
 `;
-export const CasesTitle = styled.h2`
-  padding-top: 138px;
+export const CasesTitle = styled.h1`
+  padding-top: 50px;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: ${({ theme }) => theme.colors.gradient};

@@ -1,4 +1,3 @@
-// styles.ts:
 import styled from "styled-components";
 
 export const WelcomeBox = styled.section`

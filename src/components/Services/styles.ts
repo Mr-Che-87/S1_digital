@@ -10,11 +10,12 @@ export const ServicesTitleBox = styled.div`
   background-image: url("/images/servicesBackground.svg");
   background-position: center;
   background-repeat: no-repeat;
+  //background-size: contain;
   text-align: center;
   margin-bottom: 80px;
 `;
-export const ServicesTitle = styled.h2`
-  padding-top: 138px;
+export const ServicesTitle = styled.h1`
+  padding-top: 80px;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: ${({ theme }) => theme.colors.gradient};

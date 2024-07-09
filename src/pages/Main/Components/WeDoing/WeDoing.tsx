@@ -1,6 +1,7 @@
 import { weDoIteText } from "../../../../constans/textData";
 import WeDoListItem from "./Components/WeDoListItem/WeDoListItem";
 import { WeDoBox, WeDoList, WeDoTitle, WeDoTitleBox } from "./styles";
+
 const WeDoing = () => {
   return (
     <WeDoBox>

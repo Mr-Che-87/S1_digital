@@ -3,6 +3,7 @@ import {
   WeDoItemBoldText,
   WeDoItemText,
   WeDoItemTextBox,
+  WeDoItemContainer
 } from "./styles";
 
 interface WeDoListItemProps {
@@ -14,13 +15,13 @@ interface WeDoListItemProps {
 
 const WeDoListItem = ({ name, title, text, variant }: WeDoListItemProps) => {
   return (
-    <>
+    <WeDoItemContainer>
       <WeDoItem>{name}</WeDoItem>
       <WeDoItemTextBox>
         <WeDoItemBoldText>{title}</WeDoItemBoldText>
         <WeDoItemText $variant={variant}>{text}</WeDoItemText>
       </WeDoItemTextBox>
-    </>
+    </WeDoItemContainer>
   );
 };
 
