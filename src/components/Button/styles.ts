@@ -24,10 +24,12 @@ export const ButtonStyled = styled.button<StylesProps>`
   font-size: 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 15px;
   color: ${({ theme }) => theme.colors.black};
   padding: 20px 120px;
   border: 1px solid ${({ theme }) => theme.colors.black};
+  border-radius: 8px;
   background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;

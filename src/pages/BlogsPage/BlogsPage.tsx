@@ -4,12 +4,17 @@ import {
   BlogText,
   BlogTitle,
   BlogTitleBox,
-  BlogBox
+  BlogBox,
+  BlogButton
 } from "../../components/Blog/styles";
+
 import BlogBlock from "../../components/BlogItem/BlogBlock";
 import Footer from "../../components/Footer/Footer";
 import HeaderMain from "../../components/Header/HeaderMain";
 import { blogData } from "../../constans/blogData";
+
+import { Link, useNavigate } from "react-router-dom";
+import Button from "../../components/Button/Button";
 
 const BlogsPage = () => {
   return (
@@ -36,6 +41,11 @@ const BlogsPage = () => {
           />
         ))}
       </BlogItemsBox>
+
+      <BlogButton> 
+        <Button type="color" variant="">прогрузить ещё????</Button>  {/*КУДА ВЕДЁТ?*/}
+      </BlogButton> 
+
       </BlogBox>
       <Footer />
     </main>

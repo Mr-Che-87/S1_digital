@@ -19,7 +19,8 @@ export const TariffsTitleBox = styled.div`
   text-align: center;
 `;
 export const TariffsTitle = styled.h1`
-padding-top: 35px;  
+  padding-top: 35px; 
+  padding-bottom: 120px;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: ${({ theme }) => theme.colors.gradient};
@@ -28,9 +29,6 @@ padding-top: 35px;
 
 export const TariffsList = styled.ol`
    display: flex;
- 
-
-
   /* list-style-type: none;
   counter-reset: my-counter;
   margin-top: 80px;

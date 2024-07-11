@@ -1,63 +1,70 @@
 import {
   TariffsItemContainer,
   TariffsItemBlock1,
-  TariffsItemBlock2,
+  TariffsQuantity,
   TariffsItem,
   TariffsEmployees,
   TariffsServicesList,
+  TariffsItemBlock2,
   TariffsTitle,
   TariffsPointsList,
-  TariffsButton
 } from "./styles";
 
+import { Link, useNavigate } from "react-router-dom";
+import Button from "../../../../../components/Button/Button";
+
 interface TariffsListItemProps {
+  quantity: string;
   name: string;
   employees: string;
   services: string[];
-  detailsButton: string;
   title: string;
   points: string[];
-  orderButton: string;
   variant: string;
+  isSpecial?: boolean;
 }
 
 const TariffsListItem = ({
+  quantity,
   name,
   employees,
   services,
-  detailsButton,
   title,
   points,
-  orderButton,
-  variant
+  variant,
+  isSpecial = false,
 }: TariffsListItemProps) => {
+  const navigate = useNavigate();
+  const handler = () => {
+    navigate("/services");
+  };
+  
   return (
-    <TariffsItemContainer $variant={variant}>
-      
-      <TariffsItemBlock1>
-        <TariffsItem>{name}</TariffsItem>
-        <TariffsEmployees>{employees}</TariffsEmployees>
-        <TariffsServicesList>
-            {services.map((service, index) => (
-              <li key={index}>{service}</li>
-            ))}
+    <TariffsItemContainer $variant={variant} $isSpecial={isSpecial}>
+      <TariffsItemBlock1 $variant={variant} $isSpecial={isSpecial}>
+        <TariffsQuantity $variant={variant} $isSpecial={isSpecial}>{quantity}</TariffsQuantity>
+        <TariffsItem $variant={variant} $isSpecial={isSpecial}>
+          <span>{name}</span> в месяц
+        </TariffsItem>
+        <TariffsEmployees $variant={variant} $isSpecial={isSpecial}>{employees}</TariffsEmployees>
+        <TariffsServicesList $variant={variant} $isSpecial={isSpecial}>
+          {services.map((service, index) => (
+            <li key={index}>{service}</li>
+          ))}
         </TariffsServicesList>
-        <TariffsButton>{detailsButton}</TariffsButton>
-        </TariffsItemBlock1>
-      
-      <TariffsItemBlock2>
-        <TariffsTitle>{title}</TariffsTitle>
-        <TariffsPointsList>
+        <Button type="bold" variant="short" handler={handler}>узнать подробнее</Button>
+      </TariffsItemBlock1>
+      <TariffsItemBlock2 $variant={variant} $isSpecial={isSpecial}>
+        <TariffsTitle $variant={variant} $isSpecial={isSpecial}>{title}</TariffsTitle>
+        <TariffsPointsList $variant={variant} $isSpecial={isSpecial}>
           {points.map((point, index) => (
             <li key={index}>{point}</li>
           ))}
         </TariffsPointsList>
-        <TariffsButton>{orderButton}</TariffsButton>
+        <Button type="bold" variant="short">заказать???</Button>
       </TariffsItemBlock2>
-    
     </TariffsItemContainer>
   );
 };
 
 export default TariffsListItem;
-

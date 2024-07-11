@@ -14,7 +14,9 @@ import Team from "./Components/Team/Team";
 import LinkBanner from "./Components/LinkBanner/LinkBanner";
 import Blog from "../../components/Blog/Blog";
 import Trust from "./Components/Trust/Trust";
+import ApplicationForm from "./Components/ApplicationForm/ApplicationForm";
 import Footer from "../../components/Footer/Footer";
+
 
 // import Cases from "../../components/Cases/Cases";
 // import Education from "./Components/Education/Education";
@@ -50,10 +52,11 @@ const MainPage = () => {
         {/*<Cases />*/}
         <Team />
         <LinkBanner />
-        <Blog />
+        <Blog showText={false} />
         {/* <Education /> */}
         {/*<Internship /> */}
         <Trust />
+        <ApplicationForm />
       </Wrapper>
       <Footer />
     </MainBox>

@@ -24,13 +24,13 @@ const  Tariffs = () => {
           <TariffsListItem
           key={index}
           variant={item.width}
+          quantity={item.quantity}
           name={item.name}
           employees={item.employees}
           services={item.services}
-          detailsButton={item.detailsButton}
           title={item.title}
           points={item.points}
-          orderButton={item.orderButton}
+          isSpecial={item.isSpecial} 
         />
         ))}
       </TariffsList>  

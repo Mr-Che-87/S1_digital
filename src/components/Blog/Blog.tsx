@@ -5,19 +5,32 @@ import {
   BlogText,
   BlogTitle,
   BlogTitleBox,
+  BlogButton
 } from "./styles";
+
 import { blogData } from "../../constans/blogData";
-const Blog = () => {
+import { Link, useNavigate } from "react-router-dom";
+import Button from "../Button/Button";
+
+
+interface BlogProps {
+  showText?: boolean; // новый пропс для показа текста
+}
+
+
+const Blog = ({ showText = true }: BlogProps) => {
   return (
     <BlogBox>
       <BlogTitleBox>
         <BlogTitle>Блог</BlogTitle>
       </BlogTitleBox>
-      <BlogText>
-        Мы не просто делаем продвижение, мы создаём
-        <br />
-        маркетинговые системы, которые двигают ваш бизнес вперед
-      </BlogText>
+      {showText && (
+        <BlogText>
+          Мы не просто делаем продвижение, мы создаём
+          <br />
+          маркетинговые системы, которые двигают ваш бизнес вперед
+        </BlogText>
+      )}
       <BlogItemsBox>
         {blogData.map((item, index) => (
           <BlogBlock
@@ -30,7 +43,13 @@ const Blog = () => {
           />
         ))}
       </BlogItemsBox>
+     
+      <BlogButton> 
+        <Button type="color" variant="">все статьи????</Button>  {/*КУДА ВЕДЁТ?*/}
+      </BlogButton> 
+     
     </BlogBox>
+   
   );
 };
 

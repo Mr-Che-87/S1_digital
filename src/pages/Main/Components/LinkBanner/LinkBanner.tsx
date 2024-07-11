@@ -3,11 +3,20 @@ import {
   LinkBannerBackground,
   LinkBannerContent,
   LinkBannerTitle,
-  LinkBannerButton1,
-  LinkBannerButton2,
+  LinkBannerButtons,
 } from "./styles";
 
+import { Link, useNavigate } from "react-router-dom";
+import Button from "../../../../components/Button/Button";
+
 const LinkBanner = () => {
+  const navigate = useNavigate();
+  const handler = () => {
+    navigate("/cases");
+  };
+  
+
+
 
   return (
     <LinkBannerBox>
@@ -16,9 +25,10 @@ const LinkBanner = () => {
         <LinkBannerTitle>
         Мы точно знаем, что нужно делать, и не ведем долгих переговоров
         </LinkBannerTitle>
-        
-        <LinkBannerButton1>история болезни</LinkBannerButton1> 
-        <LinkBannerButton2>примеры работ</LinkBannerButton2> 
+        <LinkBannerButtons>
+          <Button type="bold" variant="">история болезни???</Button>  {/*КУДА ВЕДЁТ?*/}
+          <Button type="bold" variant="" handler={handler}>примеры работ</Button>
+        </LinkBannerButtons>
          
       </LinkBannerContent>  
     </LinkBannerBox>
