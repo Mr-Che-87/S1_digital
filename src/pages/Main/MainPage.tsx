@@ -11,6 +11,7 @@ import Welcome from "./Components/Welcome/Welcome";
 import WeDoing from "./Components/WeDoing/WeDoing";
 import Tariffs from "./Components/Tariffs/Tariffs";
 import Team from "./Components/Team/Team";
+import LinkBanner from "./Components/LinkBanner/LinkBanner";
 import Blog from "../../components/Blog/Blog";
 import Trust from "./Components/Trust/Trust";
 import Footer from "../../components/Footer/Footer";
@@ -48,6 +49,7 @@ const MainPage = () => {
         {/*<Services />*/}
         {/*<Cases />*/}
         <Team />
+        <LinkBanner />
         <Blog />
         {/* <Education /> */}
         {/*<Internship /> */}

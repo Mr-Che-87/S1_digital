@@ -28,7 +28,8 @@ padding-top: 35px;
 
 export const TariffsList = styled.ol`
    display: flex;
-   
+ 
+
 
   /* list-style-type: none;
   counter-reset: my-counter;

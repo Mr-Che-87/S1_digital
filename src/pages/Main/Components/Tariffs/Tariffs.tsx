@@ -21,7 +21,17 @@ const  Tariffs = () => {
 
       <TariffsList>
         {TariffsDataText.map((item, index) => (
-          <TariffsListItem variant={item.width}  key={index} name={item.name} title={item.title} text={item.text}/>
+          <TariffsListItem
+          key={index}
+          variant={item.width}
+          name={item.name}
+          employees={item.employees}
+          services={item.services}
+          detailsButton={item.detailsButton}
+          title={item.title}
+          points={item.points}
+          orderButton={item.orderButton}
+        />
         ))}
       </TariffsList>  
           
