@@ -2,6 +2,8 @@ import ApplicationForm from "../../components/ApplicationForm/ApplicationForm";
 import {
   BlogItemsBox,
   BlogText,
+  BlogNavMenu,
+  BlogNavButton,
   BlogTitle,
   BlogTitleBox,
   BlogBox,
@@ -29,6 +31,16 @@ const BlogsPage = () => {
         <br />
         маркетинговые системы, которые двигают ваш бизнес вперед
       </BlogText>
+      <BlogNavMenu>
+          <BlogNavButton>Все направления</BlogNavButton>
+          <BlogNavButton>Нейросети для продвижения</BlogNavButton>
+          <BlogNavButton>SEO</BlogNavButton>
+          <BlogNavButton>Разработка сайтов</BlogNavButton>
+          <BlogNavButton>Контекстная реклама</BlogNavButton>
+          <BlogNavButton>SMM</BlogNavButton>
+          <BlogNavButton>Таргетированная реклама</BlogNavButton>
+          <BlogNavButton>Аналитика</BlogNavButton>
+      </BlogNavMenu>
       <BlogItemsBox>
         {blogData.map((item, index) => (
           <BlogBlock
@@ -43,7 +55,7 @@ const BlogsPage = () => {
       </BlogItemsBox>
 
       <BlogButton> 
-        <Button type="color" variant="">прогрузить ещё????</Button>  {/*КУДА ВЕДЁТ?*/}
+        <Button type="color" variant="">прогрузить ещё</Button>  {/*КУДА ВЕДЁТ?*/}
       </BlogButton> 
 
       </BlogBox>

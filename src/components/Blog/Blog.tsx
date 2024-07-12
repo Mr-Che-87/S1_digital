@@ -45,7 +45,7 @@ const Blog = ({ showText = true }: BlogProps) => {
       </BlogItemsBox>
      
       <BlogButton> 
-        <Button type="color" variant="">все статьи????</Button>  {/*КУДА ВЕДЁТ?*/}
+        <Button type="color" variant="">все статьи</Button>  {/*КУДА ВЕДЁТ?*/}
       </BlogButton> 
      
     </BlogBox>

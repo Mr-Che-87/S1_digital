@@ -75,3 +75,24 @@ export const PersonalData = styled.p`
   font-size: 16px;
   font-weight: 400;
 `;
+
+
+
+export const CloseButton = styled.button`
+  position: absolute;
+  top: 120px;
+  right: 180px;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const CloseIcon = styled.span`
+  font-size: 45px;
+  color: white;
+`;

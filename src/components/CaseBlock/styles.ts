@@ -6,8 +6,11 @@ export const CaseTitle = styled.h3`
 export const CaseText = styled.p``;
 export const CaseImgBox = styled.img`
   margin-bottom: 40px;
-  height: 540px;
+ // height: 540px;
+  max-width: 540px;
+  max-height: 420px; 
   background-repeat: no-repeat;
+  //background-size: cover;
 `;
 export const CaseTitleShell = styled.div`
   background-clip: text;
@@ -19,6 +22,8 @@ export const CaseInfoBlock = styled.div`
   justify-content: space-between;
 `;
 export const CaseBox = styled.article`
+   max-width: 580px;
+  max-height: 700px; 
   padding: 40px 20px 60px 20px;
   border: 1px solid transparent;
   &:hover {

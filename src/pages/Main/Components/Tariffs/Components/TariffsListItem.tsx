@@ -10,8 +10,10 @@ import {
   TariffsPointsList,
 } from "./styles";
 
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Button from "../../../../../components/Button/Button";
+import ApplicationForm from "../../../../../components/ApplicationForm/ApplicationForm";
 
 interface TariffsListItemProps {
   quantity: string;
@@ -35,9 +37,15 @@ const TariffsListItem = ({
   isSpecial = false,
 }: TariffsListItemProps) => {
   const navigate = useNavigate();
-  const handler = () => {
+  const handlerNav = () => {
     navigate("/services");
   };
+
+  const [openPopUp, setOpenPopUp] = useState(false);
+  const handlerForm = () => {
+    setOpenPopUp(!openPopUp);
+  };
+
   
   return (
     <TariffsItemContainer $variant={variant} $isSpecial={isSpecial}>
@@ -52,7 +60,7 @@ const TariffsListItem = ({
             <li key={index}>{service}</li>
           ))}
         </TariffsServicesList>
-        <Button type="bold" variant="short" handler={handler}>узнать подробнее</Button>
+        <Button type="bold" variant="short" handler={handlerNav}>узнать подробнее</Button>
       </TariffsItemBlock1>
       <TariffsItemBlock2 $variant={variant} $isSpecial={isSpecial}>
         <TariffsTitle $variant={variant} $isSpecial={isSpecial}>{title}</TariffsTitle>
@@ -61,7 +69,8 @@ const TariffsListItem = ({
             <li key={index}>{point}</li>
           ))}
         </TariffsPointsList>
-        <Button type="bold" variant="short">заказать???</Button>
+        <Button type="bold" variant="short" handler={handlerForm}>заказать???</Button>
+        {openPopUp && <ApplicationForm onClose={handlerForm} />}
       </TariffsItemBlock2>
     </TariffsItemContainer>
   );

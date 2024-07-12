@@ -15,6 +15,11 @@ export const WeDoItemContainer = styled.li`
   flex-direction: column;
   max-width: 380px;
   //padding-top: 40px;
+  transition: background-color 0.3s, transform 0.3s;
+  &:hover {
+        opacity: 1;
+        transform: scale(1.05);
+      }
 `;
 
 

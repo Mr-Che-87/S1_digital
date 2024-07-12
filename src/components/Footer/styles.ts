@@ -111,3 +111,6 @@ export const FooterContactLink = styled.a`
 export const ScheduleText = styled(FooterText)`
   max-width: 164px;
 `;
+
+
+export const VkBlock = styled.div``;

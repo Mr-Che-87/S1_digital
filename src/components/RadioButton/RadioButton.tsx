@@ -1,9 +1,16 @@
-import { RadioButtonBorder, Shell } from "./styles";
+import { RadioButtonBorder, Shell, CheckedIndicator } from "./styles";
 
-const RadioButton = () => {
+interface RadioButtonProps {
+  checked: boolean;
+  onClick: () => void;
+}
+
+const RadioButton = ({ checked, onClick }: RadioButtonProps) => {
   return (
-    <Shell>
-      <RadioButtonBorder></RadioButtonBorder>
+    <Shell onClick={onClick}>
+      <RadioButtonBorder>
+        {checked && <CheckedIndicator>✔</CheckedIndicator>}
+      </RadioButtonBorder>
     </Shell>
   );
 };

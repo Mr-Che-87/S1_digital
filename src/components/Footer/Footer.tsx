@@ -25,6 +25,7 @@ import {
   Schedule,
   ScheduleText,
   SocialLinksBox,
+  VkBlock
 } from "./styles";
 
 const Footer = () => {
@@ -78,7 +79,12 @@ const Footer = () => {
               hello@s-one.ru
             </FooterContactLink>
             <SocialLinksBox>
-              <VkLinkWhite />
+            <VkBlock as={Link} to={"https://m.vk.com/s1digital"}>
+            <VkLinkWhite />
+          
+        </VkBlock>
+
+              
               <BehanceLink />
             </SocialLinksBox>
           </ContactUs>

@@ -14,7 +14,7 @@ const FindCost = ({ img }: FindCostProps) => {
   };
   return (
     <FindCostBox $img={img}>
-      {openPopUp === true && <ApplicationForm />}
+      {openPopUp === true && <ApplicationForm onClose={handler}  />}
       <Title>Узнать стоимость</Title>
       <Button handler={handler} variant="short" type="bold">
         Стоимость

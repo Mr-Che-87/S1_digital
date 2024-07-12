@@ -18,6 +18,7 @@ const CasesPage = () => {
       <CasesBox>
       <CasesTitleBox>
         <CasesTitle>Наши проекты</CasesTitle>
+        </CasesTitleBox>
         <CasesItemsBox>
           {caseData.map((item, index) => (
             <CaseBlock
@@ -34,7 +35,6 @@ const CasesPage = () => {
             Смотреть еще
           </Button>
         </CasesButtonBox>
-      </CasesTitleBox>
       </CasesBox>
       <Footer />
     </main>
