@@ -46,7 +46,7 @@ const MainPage = () => {
       <Wrapper>
         <Heading />
         < Welcome />
-        <WeDoing />
+        <WeDoing /> 
         <Tariffs />
         {/*<Services />*/}
         {/*<Cases />*/}

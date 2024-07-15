@@ -1,4 +1,6 @@
+// styles.ts
 import styled, { css } from "styled-components";
+
 interface StylesProps {
   readonly $variant?: string;
   readonly $type: string;
@@ -20,6 +22,7 @@ export const ArrowSvg = styled.svg<StylesProps>`
       `};
   }
 `;
+
 export const ButtonStyled = styled.button<StylesProps>`
   font-size: 16px;
   display: flex;
@@ -34,6 +37,7 @@ export const ButtonStyled = styled.button<StylesProps>`
   -webkit-background-clip: text;
   text-transform: uppercase;
   white-space: nowrap;
+
   ${({ $type }) =>
     $type === "bold" &&
     css`
@@ -42,14 +46,15 @@ export const ButtonStyled = styled.button<StylesProps>`
       background-clip: padding-box;
       -webkit-background-clip: padding-box;
     `};
+
   ${({ $type }) =>
     $type === "color" &&
     css`
-      border-image: ${({ theme }) => theme.colors.gradient};
-      border-image-slice: 1;
+      border: 1px solid ${({ theme }) => theme.colors.purple}; // Update border color
       background-image: ${({ theme }) => theme.colors.gradient};
       -webkit-text-fill-color: transparent;
     `};
+
   ${({ $variant }) =>
     $variant === "short" &&
     css`
@@ -57,10 +62,10 @@ export const ButtonStyled = styled.button<StylesProps>`
     `};
 
   &:hover {
-    border-image: ${({ theme }) => theme.colors.gradient};
-    border-image-slice: 1;
+    border: 1px solid ${({ theme }) => theme.colors.purple}; // Update border color
     background-image: ${({ theme }) => theme.colors.gradient};
     -webkit-text-fill-color: transparent;
+
     ${({ $type }) =>
       $type === "color" &&
       css`
@@ -68,6 +73,7 @@ export const ButtonStyled = styled.button<StylesProps>`
         -webkit-background-clip: padding-box;
         -webkit-text-fill-color: ${({ theme }) => theme.colors.white};
       `};
+
     ${({ $type }) =>
       $type === "bold" &&
       css`
@@ -75,14 +81,17 @@ export const ButtonStyled = styled.button<StylesProps>`
         background-image: ${({ theme }) => theme.colors.lightGradient};
         -webkit-text-fill-color: ${({ theme }) => theme.colors.white};
       `};
+
     & ${ArrowSvg} {
       path {
         stroke: #8b4bed;
+
         ${({ $type }) =>
           $type === "color" &&
           css`
             stroke: ${({ theme }) => theme.colors.white};
           `};
+
         ${({ $type }) =>
           $type === "bold" &&
           css`
@@ -91,19 +100,24 @@ export const ButtonStyled = styled.button<StylesProps>`
       }
     }
   }
+
   &:active {
     background: ${({ theme }) => theme.colors.gradient};
+
     ${({ $type }) =>
       $type === "color" &&
       css`
         background: ${({ theme }) => theme.colors.RotateGradient};
       `};
+
     ${({ $type }) =>
       $type === "bold" &&
       css`
         background: ${({ theme }) => theme.colors.RotateGradient};
       `};
+
     -webkit-text-fill-color: ${({ theme }) => theme.colors.white};
+
     & ${ArrowSvg} {
       path {
         stroke: ${({ theme }) => theme.colors.white};

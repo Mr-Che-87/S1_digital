@@ -12,5 +12,6 @@ export const theme = {
         "linear-gradient(59.84deg, #BD18CB 14.39%, #612DAC 52.71%, #8B4BED 92.65%)",
       lightGradient:
         "linear-gradient(178.73deg, #DE24EE -6.33%, #9246FF 47.58%, #A164FF 103.78%)",
+      purple: "#8B4BED", // Add this line
     },
   };
