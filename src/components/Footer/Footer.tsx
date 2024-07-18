@@ -25,7 +25,8 @@ import {
   Schedule,
   ScheduleText,
   SocialLinksBox,
-  VkBlock
+  VkBlock,
+  BehanceBlock
 } from "./styles";
 
 const Footer = () => {
@@ -49,7 +50,7 @@ const Footer = () => {
             <FooterLink to={"/services"}>Услуги</FooterLink>
             <FooterLink to={"/cases"}>Проекты</FooterLink>
             <FooterLink to={"/blogs"}>Блог</FooterLink>
-            <FooterLink to={"/"}>Стажировка???</FooterLink>  {/* оставляем пока заглушкой?(впоследствии будет ссылка на отд-лендинг) или вообще убираем?*/}
+            <FooterLink to={"/"}>Стажировка</FooterLink>  {/* заглушка(впоследствии - ссылка на отдельный лендинг) или вообще убираем?*/}
           </FooterNav>
           <Contacts>
             <ItemTitle>Контакты:</ItemTitle>
@@ -72,6 +73,7 @@ const Footer = () => {
             <FooterText>Россия, г.Москва, Спартаковская площадь 10.</FooterText>
           </AddressesBox>
         </FooterTopBlock>
+        
         <FooterBottomBlock>
           <ContactUs>
             <ChartTitle>Свяжитесь с нами:</ChartTitle>
@@ -79,15 +81,15 @@ const Footer = () => {
               hello@s-one.ru
             </FooterContactLink>
             <SocialLinksBox>
-            <VkBlock as={Link} to={"https://m.vk.com/s1digital"}>
-            <VkLinkWhite />
-          
-        </VkBlock>
-
-              
+              <VkBlock as="a" href="https://m.vk.com/s1digital" target="_blank" rel="noopener noreferrer">
+                <VkLinkWhite />
+              </VkBlock>
+              <BehanceBlock as="a" href="https://www.behance.net/s1digital" target="_blank" rel="noopener noreferrer">
               <BehanceLink />
+              </BehanceBlock>
             </SocialLinksBox>
           </ContactUs>
+          
           <FooterInfoBlock>
             <ItemTitle>Информация:</ItemTitle>
             <FooterLink to={"/"}>Пользовательское соглашение</FooterLink>

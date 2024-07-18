@@ -62,6 +62,7 @@ export const ButtonStyled = styled.button<StylesProps>`
     `};
 
   &:hover {
+    cursor: pointer;
     border: 1px solid ${({ theme }) => theme.colors.purple}; // Update border color
     background-image: ${({ theme }) => theme.colors.gradient};
     -webkit-text-fill-color: transparent;

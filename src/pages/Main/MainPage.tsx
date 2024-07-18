@@ -39,6 +39,7 @@ const MainPage = () => {
     <MainBox>
       
       <HeaderMain />
+      
       <AbsoluteBackground>
         <Lines/>
       </AbsoluteBackground>

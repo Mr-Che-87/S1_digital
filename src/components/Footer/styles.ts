@@ -114,3 +114,5 @@ export const ScheduleText = styled(FooterText)`
 
 
 export const VkBlock = styled.div``;
+
+export const BehanceBlock = styled.div``;

@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const Shell = styled.div`
   background: ${({ theme }) => theme.colors.gradient};
-  position: relative;
+  position: sticky; 
+  top: 0;  //приклеиваем к верху страницы
+  z-index: 1000; //видимость поверх контента
   padding: 1px;
 `;
 

@@ -69,7 +69,7 @@ const TariffsListItem = ({
             <li key={index}>{point}</li>
           ))}
         </TariffsPointsList>
-        <Button type="bold" variant="short" handler={handlerForm}>заказать???</Button>
+        <Button type="bold" variant="short" handler={handlerForm}>заказать</Button>
         {openPopUp && <ApplicationForm onClose={handlerForm} />}
       </TariffsItemBlock2>
     </TariffsItemContainer>
