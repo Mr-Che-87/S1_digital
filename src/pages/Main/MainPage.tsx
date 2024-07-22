@@ -40,13 +40,13 @@ const MainPage = () => {
       
       <HeaderMain />
       
-      <AbsoluteBackground>
-        <Lines/>
-      </AbsoluteBackground>
+       <AbsoluteBackground> 
+      <Lines/>
+       </AbsoluteBackground> 
 
       <Wrapper>
         <Heading />
-        < Welcome />
+        <Welcome />
         <WeDoing /> 
         <Tariffs />
         {/*<Services />*/}

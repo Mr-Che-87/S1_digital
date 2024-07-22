@@ -15,7 +15,7 @@ export const TariffsItemBlock1 = styled.div<StylesProps>`
   padding: 40px 30px;
   gap: 10px;
 //align-items: flex-start; 
-background: ${(props) => (props.$isSpecial ? 'rgba(1, 1, 53, 1)' : '#FFFFFF')}; 
+  background: ${(props) => (props.$isSpecial ? 'rgba(1, 1, 53, 1)' : '#FFFFFF')}; 
 `;
 
 
@@ -127,11 +127,13 @@ export const TariffsItemContainer = styled.li<StylesProps>`
   margin-right: 20px;
   margin-bottom: 20px;
   background-color: ${(props) => (props.$isSpecial ? 'rgba(200, 200, 200)' : 'white')};
-  transition: background-color 0.3s, transform 0.3s;
-  &:hover {
+   transition: background-color 0.3s, transform 0.3s;
+  /*&:hover {
         opacity: 1;
         transform: scale(1.05);
-      }
+      } */
+  
+  
 `;
 
 
