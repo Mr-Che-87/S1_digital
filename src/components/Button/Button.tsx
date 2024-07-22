@@ -6,7 +6,6 @@ interface ButtonProps {
   variant: string;
   type: string;
   handler?: () => void;
-
 }
 
 const Button = ({ children, handler, variant, type}: ButtonProps) => {

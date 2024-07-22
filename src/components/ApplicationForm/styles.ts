@@ -1,23 +1,48 @@
 import styled from "styled-components";
 export const PopUp = styled.div`
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
 `;
 export const FormContainer = styled.form`
-  background-color: ${({ theme }) => theme.colors.white};
-  display: flex;
-  flex-direction: column;
-  padding: 120px;
-  max-width: 980px;
+ position: fixed;
+ z-index: 1;
+ width: 80%;
+ height: 90%; 
+ max-width: 980px;
+ max-height: 916px;  
+ display: flex;
+ flex-direction: column;
+ padding: 40px;
+ background-color: ${({ theme }) => theme.colors.white};
 `;
+export const CloseButton = styled.button`
+  position: absolute; 
+  top: 0; 
+  right: -50px; 
+  width: 40px; 
+  height: 40px; 
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const CloseIcon = styled.span`
+  font-size: 40px;
+  color: white;
+`;
+
+
+
 export const InputTop = styled.div`
   display: flex;
   gap: 20px;
@@ -78,21 +103,3 @@ export const PersonalData = styled.p`
 
 
 
-export const CloseButton = styled.button`
-  position: absolute;
-  top: 120px;
-  right: 180px;
-  width: 80px;
-  height: 80px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const CloseIcon = styled.span`
-  font-size: 45px;
-  color: white;
-`;

@@ -1,17 +1,33 @@
-import Button from "../../components/Button/Button";
-import CaseBlock from "../../components/CaseBlock/CaseBlock";
+import { useState } from "react";
 import {
   CasesBox,
   CasesButtonBox,
   CasesItemsBox,
   CasesTitle,
   CasesTitleBox,
-} from "../../components/Cases/styles";
-import Footer from "../../components/Footer/Footer";
+} from "./styles";
 import HeaderMain from "../../components/Header/HeaderMain";
+import CaseBlock from "../../components/CaseBlock/CaseBlock";
+import Button from "../../components/Button/Button";
+import Footer from "../../components/Footer/Footer";
+
 import { caseData } from "../../constans/caseData";
 
 const CasesPage = () => {
+   // Состояние для управления количеством отображаемых элементов
+   const [visibleCount, setVisibleCount] = useState(8);  //8 проектов максимум на главной странице
+
+   // Функция для загрузки ещё элементов
+   const loadMore = () => {
+     setVisibleCount((prevCount) => prevCount + 8);
+   };
+   //Функция для их скрытия:
+   const showLess = () => {
+    setVisibleCount(8);
+  };
+
+  const isAllVisible = visibleCount >= caseData.length;
+
   return (
     <main>
       <HeaderMain />
@@ -20,7 +36,7 @@ const CasesPage = () => {
         <CasesTitle>Наши проекты</CasesTitle>
         </CasesTitleBox>
         <CasesItemsBox>
-          {caseData.map((item, index) => (
+          {caseData.slice(0, visibleCount).map((item, index) => (
             <CaseBlock
               key={index}
               imgUrl={item.imgUrl}
@@ -31,9 +47,16 @@ const CasesPage = () => {
           ))}
         </CasesItemsBox>
         <CasesButtonBox>
-          <Button variant="long" type="color">
-            Смотреть еще
-          </Button>
+          {!isAllVisible && (
+            <Button variant="long" type="color" handler={loadMore}>
+              Смотреть еще
+            </Button>
+          )}
+          {visibleCount > 8 && (
+            <Button variant="long" type="color" handler={showLess}>
+              Скрыть часть проектов
+            </Button>
+          )}
         </CasesButtonBox>
       </CasesBox>
       <Footer />

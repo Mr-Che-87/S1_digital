@@ -63,7 +63,7 @@ export const caseData = [
     title: "Кейс - Google Ads для французского...",
     text: "Первый европейский сад в России",
     width: "920px",
-    pageData: ["/images/cases/orekhovoEstate/orekhovoEstate.jpg"],
+    pageData: [""],  //ЗАГЛУШКА
   },
   {
     imgUrl: "/images/cases/beautylabstore/beautylabstore.jpg",
@@ -71,7 +71,7 @@ export const caseData = [
     title: "BEAUTY LAB STORE",
     text: "САЛОН КРАСОТЫ И ИНТЕРНЕТ-МАГАЗИН КОСМЕТИКИ",
     width: "920px",
-    pageData: ["/images/cases/orekhovoEstate/orekhovoEstate.jpg"],
+    pageData: [""],  //ЗАГЛУШКА
   },
   {
     imgUrl: "/images/cases/contora/contora.jpg",
@@ -79,7 +79,7 @@ export const caseData = [
     title: "CONTORA",
     text: "САЛОН КРАСОТЫ ВЛАДИСЛАВА ЛИСОВЦА",
     width: "920px",
-    pageData: ["/images/cases/orekhovoEstate/orekhovoEstate.jpg"],
+    pageData: [""],  //ЗАГЛУШКА
   },
   {
     imgUrl: "/images/cases/crop&drpop/crop&drpop.jpg",
@@ -87,7 +87,7 @@ export const caseData = [
     title: "CROP&DROP",
     text: "КУЛЬТОВАЯ ПАРИКМАХЕРСКАЯ Санкт-...",
     width: "640px",
-    pageData: ["/images/cases/orekhovoEstate/orekhovoEstate.jpg"],
+    pageData: [""],  //ЗАГЛУШКА
   },
   {
     imgUrl: "/images/cases/eliseevsttore/eliseevsttore.jpg",
@@ -95,7 +95,7 @@ export const caseData = [
     title: "ELISEEV STORE",
     text: "МАГАЗИН ОДЕЖДЫ",
     width: "920px",
-    pageData: ["/images/cases/orekhovoEstate/orekhovoEstate.jpg"],
+    pageData: [""],  //ЗАГЛУШКА
   },
   {
     imgUrl: "/images/cases/olgasysoeva/olgasysoeva.jpg",
@@ -103,7 +103,7 @@ export const caseData = [
     title: "Зоопсихолог Ольга Сысоева",
     text: "Интернет-магазин вебинаров и книг",
     width: "920px",
-    pageData: ["/images/cases/orekhovoEstate/orekhovoEstate.jpg"],
+    pageData: [""],  //ЗАГЛУШКА
   },
   {
     imgUrl: "/images/cases/medicari/medicari.jpg",
@@ -111,6 +111,6 @@ export const caseData = [
     title: "MEDICARI",
     text: "Центр здоровья",
     width: "640px",
-    pageData: ["/images/cases/orekhovoEstate/orekhovoEstate.jpg"],
+    pageData: [""],  //ЗАГЛУШКА
   },
 ];

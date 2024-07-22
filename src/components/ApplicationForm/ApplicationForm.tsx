@@ -51,7 +51,7 @@ const ApplicationForm = ({ onClose }: ApplicationFormProps) => {
         <CloseButton onClick={onClose}>
           <CloseIcon>✕</CloseIcon>
         </CloseButton>
-        <div>
+    
           <TitleBox>
             <FormTitle>Мы свяжемся</FormTitle>
             <FormTitleText>
@@ -100,7 +100,7 @@ const ApplicationForm = ({ onClose }: ApplicationFormProps) => {
               </LabelBox>
             </RadioBlock>
           </InputBlock>
-        </div>
+        
         <ButtonBlock>
           <Button variant="long" type="bold" handler={() => {}}>
             Отправить заявку

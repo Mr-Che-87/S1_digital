@@ -127,11 +127,12 @@ export const TariffsItemContainer = styled.li<StylesProps>`
   margin-right: 20px;
   margin-bottom: 20px;
   background-color: ${(props) => (props.$isSpecial ? 'rgba(200, 200, 200)' : 'white')};
-   transition: background-color 0.3s, transform 0.3s;
-  /*&:hover {
-        opacity: 1;
-        transform: scale(1.05);
-      } */
+  //АНИМАЦИЯ КОНФЛИКТУЕТ С ОТКРЫТИЕМ МОДАЛКИ!!!
+  //transition: background-color 0.3s, transform 0.3s;
+  //&:hover {
+  //      opacity: 1;
+  //      transform: scale(1.01);
+  //    }  
   
   
 `;

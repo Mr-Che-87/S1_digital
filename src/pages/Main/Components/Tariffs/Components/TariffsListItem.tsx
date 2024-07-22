@@ -10,7 +10,7 @@ import {
   TariffsPointsList,
 } from "./styles";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Button from "../../../../../components/Button/Button";
 import ApplicationForm from "../../../../../components/ApplicationForm/ApplicationForm";
@@ -45,6 +45,14 @@ const TariffsListItem = ({
   const handlerForm = () => {
     setOpenPopUp(!openPopUp);
   };
+
+  useEffect(() => {
+    if (openPopUp) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [openPopUp]);
 
   
   return (

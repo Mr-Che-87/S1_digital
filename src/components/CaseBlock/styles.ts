@@ -6,11 +6,12 @@ export const CaseTitle = styled.h3`
 export const CaseText = styled.p``;
 export const CaseImgBox = styled.img`
   margin-bottom: 40px;
- // height: 540px;
   max-width: 540px;
   max-height: 420px; 
-  background-repeat: no-repeat;
-  //background-size: cover;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+// background-repeat: no-repeat;
 `;
 export const CaseTitleShell = styled.div`
   background-clip: text;
