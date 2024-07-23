@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import blogFilterReducer from "../services/slices/blogFilterSlice";
 import openServiceSlice from '../services/slices/openServiceSlice'
 export const store = configureStore({
   reducer: {
     openServiceSlice,
+    blogFilter: blogFilterReducer,
   },
 });
 

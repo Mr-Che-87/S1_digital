@@ -34,26 +34,41 @@ export const BlogText = styled.h2`
 
 export const BlogNavMenu = styled.div`
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap; 
   gap: 10px;
+  max-width: 1000px;
   margin: 10px 10px 40px 10px;
+  padding-left: 30px;
   //margin-bottom: 40px;
 `;
-export const BlogNavButton = styled.button`
-  box-sizing: border-box;
-  padding: 10px 20px;
-  gap: 10px;
-  border: 1px solid #333333;
-  background: transparent;
-  cursor: pointer;
+
+
+export const BlogFilterButton = styled.button`
   font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: ${({ theme }) => theme.colors.black};
+  padding: 10px 20px;
+  border: 1px solid ${({ theme }) => theme.colors.black};
+  background-clip: text;
+  -webkit-background-clip: text;
   text-transform: uppercase;
+  white-space: nowrap;
+
   &:hover {
-    color: violet;
-    border-image: ${({ theme }) => theme.colors.gradient};
-    border-image-slice: 1;
-    //background-image: ${({ theme }) => theme.colors.gradient};
+  cursor: pointer;
+  border: 1px solid ${({ theme }) => theme.colors.purple}; // Update border color
+  background-image: ${({ theme }) => theme.colors.gradient};
+  -webkit-text-fill-color: transparent;
   }
+
+  &:focus, &:active {
+    color: white;
+    -webkit-text-fill-color: white; 
+    background: ${({ theme }) => theme.colors.gradient};
+  } 
 `;
 
 export const BlogItemsBox = styled.div`

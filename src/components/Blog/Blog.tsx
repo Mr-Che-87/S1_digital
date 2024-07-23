@@ -1,15 +1,19 @@
+import { useState } from "react";
+
 import BlogBlock from "../BlogItem/BlogBlock";
 import {
-  BlogBox,
   BlogItemsBox,
   BlogText,
+  BlogNavMenu,
+  BlogFilterButton,
   BlogTitle,
   BlogTitleBox,
+  BlogBox,
   BlogButton
 } from "./styles";
 
 import { blogData } from "../../constans/blogData";
-import { Link, useNavigate } from "react-router-dom";
+//import { Link, useNavigate } from "react-router-dom";
 import Button from "../Button/Button";
 
 
@@ -19,6 +23,18 @@ interface BlogProps {
 
 
 const Blog = ({ showText = true }: BlogProps) => {
+  const [visibleCount, setVisibleCount] = useState(3);  //3 - максимально статей показывается по умолчанию (без учёта фильтров)
+
+
+
+  const handleShowLess = () => {
+    setVisibleCount(6); // показывает только 3 статьи
+  };
+  const handleLoadMore = () => {
+    setVisibleCount(blogData.length); // показывает все
+  };
+
+
   return (
     <BlogBox>
       <BlogTitleBox>
@@ -32,7 +48,7 @@ const Blog = ({ showText = true }: BlogProps) => {
         </BlogText>
       )}
       <BlogItemsBox>
-        {blogData.map((item, index) => (
+        {blogData.slice(0, visibleCount).map((item, index) => (
           <BlogBlock
             img={item.img}
             link={item.link}
@@ -44,9 +60,17 @@ const Blog = ({ showText = true }: BlogProps) => {
         ))}
       </BlogItemsBox>
      
-      <BlogButton> 
-        <Button type="color" variant="">все статьи</Button>  {/*КУДА ВЕДЁТ?*/}
-      </BlogButton> 
+      <BlogButton>
+          {visibleCount < blogData.length ? (
+            <Button type="color" variant="" handler={handleLoadMore}>
+              Смотреть ещё
+            </Button>
+          ) : (
+            <Button type="color" variant="" handler={handleShowLess}>
+              Скрыть часть статей
+            </Button>
+          )}
+        </BlogButton>
      
     </BlogBox>
    

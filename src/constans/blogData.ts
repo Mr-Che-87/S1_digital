@@ -1,8 +1,8 @@
 export const blogData = [
   
-  
   {
     title: "Как добиться успешного продвижения сайта в поисковых системах",
+    filtertype: "seo",  //для фильтрации статей в блоге
     link: "websitepromotioninsearch",
     img: "websitepromotioninsearch/preview.jpg",
     pageImg: "/images/blogs/websitepromotioninsearch/main.jpg",
@@ -204,8 +204,8 @@ export const blogData = [
 
 
   {
-    title:
-      "Пошаговое руководство по SMM-продвижению в социальных сетях — инструменты, стратегии и результаты",
+    title: "Пошаговое руководство по SMM-продвижению в социальных сетях — инструменты, стратегии и результаты",
+    filtertype: "smm",
     link: "smmpromotion",
     img: "smmpromotion/preview.jpg",
     pageImg: "/images/blogs/smmpromotion/main.jpg",
@@ -376,8 +376,8 @@ export const blogData = [
 
 
   {
-    title:
-      "Видеомаркетинг",
+    title: "Видеомаркетинг",
+    filtertype: "analytics", 
     link: "googleadwordsladvertising",
     img: "googleadwordsladvertising/preview.jpg",
     pageImg: "/images/blogs/videomarketing/video-marketing.jpg",
@@ -385,7 +385,6 @@ export const blogData = [
     date: "02.06.2022",
     photo: "/images/blogs/videomarketing/video-marketing.jpg",
     photoText: [
-      "",
       "",
     ],
     blogData: [
@@ -434,5 +433,112 @@ export const blogData = [
     ],
     faq: [{ title: "...", text: "..." }],
   },
+
+
+
+  {
+    title: "Контекстная реклама",
+    filtertype: "context-adv",
+    link: "",
+    img: "googleadwordsladvertising/preview.jpg",
+    pageImg: "",
+    text: "Контекстная реклама",
+    date: "02.06.2022",
+    photo: "",
+    photoText: [
+      "",
+    ],
+    blogData: [
+      {
+        title: "",
+        block: [ "",],
+      }
+    ],
+    faq: [{ title: "", text: "" }],
+  },
+
+  {
+    title: "SEO",
+    filtertype: "seo",
+    link: "",
+    img: "googleadwordsladvertising/preview.jpg",
+    pageImg: "",
+    text: "SEO",
+    date: "02.06.2022",
+    photo: "",
+    photoText: [
+      "",
+    ],
+    blogData: [
+      {
+        title: "",
+        block: [ "",],
+      }
+    ],
+    faq: [{ title: "", text: "" }],
+  },
   
+  {
+    title: "Таргетированная реклама",
+    filtertype: "target-adv",
+    link: "",
+    img: "googleadwordsladvertising/preview.jpg",
+    pageImg: "",
+    text: "Таргетированная реклама",
+    date: "02.06.2022",
+    photo: "",
+    photoText: [
+      "",
+    ],
+    blogData: [
+      {
+        title: "",
+        block: [ "",],
+      }
+    ],
+    faq: [{ title: "", text: "" }],
+  },
+
+  {
+    title: "Разработка сайтов",
+    filtertype: "website-dev",
+    link: "",
+    img: "googleadwordsladvertising/preview.jpg",
+    pageImg: "",
+    text: "Разработка сайтов",
+    date: "02.06.2022",
+    photo: "",
+    photoText: [
+      "",
+    ],
+    blogData: [
+      {
+        title: "",
+        block: [ "",],
+      }
+    ],
+    faq: [{ title: "", text: "" }],
+  },
+
+  {
+    title: "Нейросети для продвижения",
+    filtertype: "neural",
+    link: "",
+    img: "googleadwordsladvertising/preview.jpg",
+    pageImg: "",
+    text: "Нейросети для продвижения",
+    date: "02.06.2022",
+    photo: "",
+    photoText: [
+      "",
+    ],
+    blogData: [
+      {
+        title: "",
+        block: [ "",],
+      }
+    ],
+    faq: [{ title: "", text: "" }],
+  },
+
 ];
