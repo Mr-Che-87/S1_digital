@@ -31,6 +31,7 @@ export const VideoBlock = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 100px;
 `;
 export const VideoTexBox = styled.div`
   display: flex;
@@ -42,10 +43,25 @@ export const VideoText = styled.p`
   line-height: 139.99%;
   max-width: 660px;
 `;
-export const PhotoBlock = styled.div``
+
+export const PhotoBlock = styled.div`
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 100px;`
 export const PhotoBox = styled.div``
-export const PhotoTextBlock = styled.div``
-export const PhotoText = styled.p``
+export const PhotoTextBlock = styled.div`
+ display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+export const PhotoText = styled.p`
+  font-style: normal;
+  line-height: 139.99%;
+  max-width: 660px;
+`;
+
 export const HistoryBox = styled.div`
   display: flex;
   align-items: center;
@@ -91,6 +107,7 @@ export const DataBox = styled.div`
   flex-direction: column;
   gap: 80px;
   margin-top: 80px;
+  margin-bottom: 100px;
 `;
 export const ItemBox = styled.div`
   display: flex;
@@ -99,7 +116,7 @@ export const ItemBox = styled.div`
 `;
 export const Faq = styled.div`
   margin-top: 80px;
-  margin-bottom: 180px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   gap: 20px;

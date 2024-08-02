@@ -22,7 +22,7 @@ interface BlogProps {
 }
 
 
-const Blog = ({ showText = true }: BlogProps) => {
+const BlogForMain = ({ showText = true }: BlogProps) => {
   const [visibleCount, setVisibleCount] = useState(3);  //3 - максимально статей показывается по умолчанию (без учёта фильтров)
 
 
@@ -77,4 +77,4 @@ const Blog = ({ showText = true }: BlogProps) => {
   );
 };
 
-export default Blog;
+export default BlogForMain;

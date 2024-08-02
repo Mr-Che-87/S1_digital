@@ -13,7 +13,7 @@ import {
   BlogTitleBox,
   BlogBox,
   BlogButton
-} from "../../components/Blog/styles";
+} from "../../components/BlogForMain/styles";
 
 import BlogBlock from "../../components/BlogItem/BlogBlock";
 import Footer from "../../components/Footer/Footer";

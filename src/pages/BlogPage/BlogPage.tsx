@@ -123,7 +123,7 @@ const BlogPage = () => {
               ></iframe>
             </div>
             <VideoTexBox>
-              {blogItem.videoText.map((item, index) => (
+              {blogItem.videoText?.map((item, index) => (
                 <VideoText key={index}>{item}</VideoText>
               ))}
             </VideoTexBox>
@@ -132,12 +132,13 @@ const BlogPage = () => {
           <PhotoBlock>
             <PhotoBox />
             <PhotoTextBlock>
-              {blogItem.photoText.map((item, index) => (
+              {blogItem.photoText?.map((item, index) => (
                 <PhotoText key={index}>{item}</PhotoText>
               ))}
             </PhotoTextBlock>
           </PhotoBlock>
         ) : null}
+        {blogItem.faq && blogItem.faq.length > 0 && (
         <Faq>
           <BlockTitleItem>Вопрос-ответ:</BlockTitleItem>
           {blogItem.faq.map((item, index) => (
@@ -147,6 +148,7 @@ const BlogPage = () => {
             </div>
           ))}
         </Faq>
+        )}
       </WrapperBlg>
       <Footer />
     </main>

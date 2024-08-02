@@ -3,9 +3,9 @@ export const blogData = [
   {
     title: "Как добиться успешного продвижения сайта в поисковых системах",
     filtertype: "seo",  //для фильтрации статей в блоге
-    link: "websitepromotioninsearch",
-    img: "websitepromotioninsearch/preview.jpg",
-    pageImg: "/images/blogs/websitepromotioninsearch/main.jpg",
+    link: "promotionInSearch",
+    img: "seo/main.jpg",  
+    pageImg: "/images/blogs/seo/promotionInSearch.jpg",  //папка seo одна и таже, хз зачем тут полный путь
     text: "Если вы хотите, чтобы ваш сайт был успешным и популярным, необходимо правильно определить свою целевую аудиторию, создать качественный и интересный контент, оптимизировать сайт для поисковых систем, улучшить структуру сайта и регулярно обновлять контент. Следуя этим простым советам, вы сможете добиться успеха в продвижении своего сайта.",
     date: "02.06.2022",
     video: "https://www.youtube.com/embed/59OwK-pkdEo?si=NwzUJuRbQLTspDtl",
@@ -204,11 +204,11 @@ export const blogData = [
 
 
   {
-    title: "Пошаговое руководство по SMM-продвижению в социальных сетях — инструменты, стратегии и результаты",
+    title: "Пошаговое руководство по SMM-продвижению в социальных сетях - инструменты, стратегии и результаты",
     filtertype: "smm",
-    link: "smmpromotion",
-    img: "smmpromotion/preview.jpg",
-    pageImg: "/images/blogs/smmpromotion/main.jpg",
+    link: "smmStepByStep",
+    img: "smm/main.jpg",
+    pageImg: "/images/blogs/smm/smmStepByStep.jpeg",
     text: "В данном руководстве мы рассмотрим все аспекты SMM-продвижения в социальных сетях. Вы узнаете об основных инструментах и стратегиях, которые помогут вам привлечь больше аудитории, увеличить вовлеченность и конвертировать посетителей в клиентов.",
     date: "02.06.2022",
     video: "https://www.youtube.com/embed/aoWX8QFM5Ps?si=bwD9UeTFryC4DEYD",
@@ -378,15 +378,13 @@ export const blogData = [
   {
     title: "Видеомаркетинг",
     filtertype: "analytics", 
-    link: "googleadwordsladvertising",
-    img: "googleadwordsladvertising/preview.jpg",
-    pageImg: "/images/blogs/videomarketing/video-marketing.jpg",
+    link: "video-marketing",
+    img: "analytics/main.jpg",
+    pageImg: "/images/blogs/analytics/video-marketing.jpg",
     text: "На сегодняшний день видеоконтент является самым востребованным форматом среди пользователей интернета. Короткие скетчи, челленджи, сторителлинги серьёзно подвинули графические и текстовые виды рекламы в интернет-пространстве. Согласно опросам, более 80% пользователей надеется на увеличение видеоконтента в ближайшие годы от брендов, за которыми они следят и пользуются их продукцией. Но с чего начать?",
     date: "02.06.2022",
-    photo: "/images/blogs/videomarketing/video-marketing.jpg",
-    photoText: [
-      "",
-    ],
+    // photo: "",  //video: "",
+    // photoText: [""],  //videoText: [""],
     blogData: [
       {
         title: "Немного статистики...",
@@ -431,7 +429,7 @@ export const blogData = [
         ],
       },
     ],
-    faq: [{ title: "...", text: "..." }],
+    //faq: [{ title: "", text: "" }],
   },
 
 
@@ -439,106 +437,96 @@ export const blogData = [
   {
     title: "Контекстная реклама",
     filtertype: "context-adv",
-    link: "",
-    img: "googleadwordsladvertising/preview.jpg",
-    pageImg: "",
+    link: "context-adv",
+    img: "context-adv/main.jpg",
+    pageImg: "/images/blogs/context-adv/main.jpg",
     text: "Контекстная реклама",
     date: "02.06.2022",
-    photo: "",
-    photoText: [
-      "",
-    ],
+    // photo: "",  //video: "",
+    // photoText: [""],  //videoText: [""],
     blogData: [
       {
         title: "",
         block: [ "",],
       }
     ],
-    faq: [{ title: "", text: "" }],
+    //faq: [{ title: "", text: "" }],
   },
 
   {
     title: "SEO",
     filtertype: "seo",
-    link: "",
-    img: "googleadwordsladvertising/preview.jpg",
-    pageImg: "",
+    link: "seo",
+    img: "seo/main.jpg",
+    pageImg: "/images/blogs/seo/main.jpg",
     text: "SEO",
     date: "02.06.2022",
-    photo: "",
-    photoText: [
-      "",
-    ],
+    // photo: "",  //video: "",
+    // photoText: [""],  //videoText: [""],
     blogData: [
       {
         title: "",
         block: [ "",],
       }
     ],
-    faq: [{ title: "", text: "" }],
+    //faq: [{ title: "", text: "" }],
   },
   
   {
     title: "Таргетированная реклама",
     filtertype: "target-adv",
-    link: "",
-    img: "googleadwordsladvertising/preview.jpg",
-    pageImg: "",
+    link: "target-adv",
+    img: "target-adv/main.jpg",
+    pageImg: "/images/blogs/target-adv/main.jpg",
     text: "Таргетированная реклама",
     date: "02.06.2022",
-    photo: "",
-    photoText: [
-      "",
-    ],
+    // photo: "",  //video: "",
+    // photoText: [""],  //videoText: [""],
     blogData: [
       {
         title: "",
         block: [ "",],
       }
     ],
-    faq: [{ title: "", text: "" }],
+    //faq: [{ title: "", text: "" }],
   },
 
   {
     title: "Разработка сайтов",
     filtertype: "website-dev",
-    link: "",
-    img: "googleadwordsladvertising/preview.jpg",
-    pageImg: "",
+    link: "website-dev",
+    img: "website-dev/main.jpg",
+    pageImg: "/images/blogs/website-dev/main.jpg",
     text: "Разработка сайтов",
     date: "02.06.2022",
-    photo: "",
-    photoText: [
-      "",
-    ],
+    // photo: "",  //video: "",
+    // photoText: [""],  //videoText: [""],
     blogData: [
       {
         title: "",
         block: [ "",],
       }
     ],
-    faq: [{ title: "", text: "" }],
+    //faq: [{ title: "", text: "" }],
   },
 
   {
     title: "Нейросети для продвижения",
     filtertype: "neural",
-    link: "",
-    img: "googleadwordsladvertising/preview.jpg",
-    pageImg: "",
+    link: "neural",
+    img: "neural/main.jpg",
+    pageImg: "/images/blogs/neural/main.jpg",
     text: "Нейросети для продвижения",
     date: "02.06.2022",
     photo: "",
-    photoText: [
-      "",
-    ],
+    photoText: ["",],
     blogData: [
       {
         title: "",
         block: [ "",],
       }
     ],
-    faq: [{ title: "", text: "" }],
+    //faq: [{ title: "", text: "" }],
   },
 
 ];

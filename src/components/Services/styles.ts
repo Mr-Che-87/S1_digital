@@ -13,6 +13,12 @@ export const ServicesTitleBox = styled.div`
   //background-size: contain;
   text-align: center;
   margin-bottom: 80px;
+  @media (max-width: 1024px) {
+    background-size: 400px;
+  }
+  @media (max-width: 576px) {
+    background-size: 270px;
+  }
 `;
 export const ServicesTitle = styled.h1`
   padding-top: 80px;
@@ -20,6 +26,16 @@ export const ServicesTitle = styled.h1`
   -webkit-background-clip: text;
   background-image: ${({ theme }) => theme.colors.gradient};
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 1024px) { 
+    padding-top: 60px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+  }
+  @media (max-width: 576px) {
+    padding-top: 40px;
+  }
 `;
 export const ServicesItemsBox = styled.div`
   display: flex;
@@ -28,3 +44,5 @@ export const ServicesItemsBox = styled.div`
   row-gap: 40px;
   justify-content: center;
 `;
+
+

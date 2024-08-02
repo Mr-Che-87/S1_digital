@@ -5,22 +5,25 @@ export const CaseTitle = styled.h3`
 `;
 export const CaseText = styled.p``;
 export const CaseImgBox = styled.img`
-  margin-bottom: 40px;
-  max-width: 540px;
-  max-height: 420px; 
-  width: 100%; 
-  height: 100%; 
+  margin-bottom: 20px;
+  width: 540px;
+  height: 420px; 
   object-fit: cover;
 // background-repeat: no-repeat;
 `;
 export const CaseTitleShell = styled.div`
+  margin-bottom: 10px;
   background-clip: text;
   -webkit-background-clip: text;
 `;
-export const CaseTextBox = styled.div``;
+
 export const CaseInfoBlock = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+`;
+export const CaseTextBox = styled.div`
+    margin-bottom: 40px;
 `;
 export const CaseBox = styled.article`
    max-width: 580px;

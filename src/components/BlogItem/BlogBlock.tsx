@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import {
-  BlogDate,
-  BlogImg,
   BlogItemBox,
-  BlogItemText,
+  BlogImgWrapper,
+  BlogImg,
+  BlogImgTitle,
+  BlogDate,
   BlogItemTitle,
+  BlogItemText,
 } from "./styles";
 import { getCutText } from "../../services/utils/getCutText";
 
@@ -15,13 +17,16 @@ interface BlogBlockProps {
   date: string;
   link: string;
   img: string;
-
 }
 
 const BlogBlock = ({ title, text, date, link, img }: BlogBlockProps) => {
   return (
     <BlogItemBox>
-      <BlogImg src={`/images/blogs/${img}`} alt="img" />
+      <BlogImgWrapper>
+        <BlogImg src={`/images/blogs/${img}`} alt="img" />
+        <BlogImgTitle>{getCutText(title)}</BlogImgTitle>
+      </BlogImgWrapper>
+     
       <BlogDate>{date}</BlogDate>
       <BlogItemTitle>{getCutText(title)}</BlogItemTitle>
       <BlogItemText>{text}</BlogItemText>

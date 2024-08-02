@@ -1,6 +1,7 @@
 import { 
-  AbsoluteBackground, 
   MainBox,
+  AbsoluteBackground, 
+  LineStaticNew
 } from "./styles";
 
 import { Wrapper } from "../../globalStyles";
@@ -12,7 +13,7 @@ import WeDoing from "./Components/WeDoing/WeDoing";
 import Tariffs from "./Components/Tariffs/Tariffs";
 import Team from "./Components/Team/Team";
 import LinkBanner from "./Components/LinkBanner/LinkBanner";
-import Blog from "../../components/Blog/Blog";
+import BlogForMain from "../../components/BlogForMain/BlogForMain";
 import Trust from "./Components/Trust/Trust";
 import ApplicationMenu from "./Components/ApplicationMenu/ApplicationMenu";
 import Footer from "../../components/Footer/Footer";
@@ -40,10 +41,12 @@ const MainPage = () => {
       
       <HeaderMain />
       
-       <AbsoluteBackground> 
-      <Lines/>
-       </AbsoluteBackground> 
-
+      <LineStaticNew />  
+   
+      {/* <AbsoluteBackground>  
+        <Lines/>
+      </AbsoluteBackground>   */}
+    
       <Wrapper>
         <Heading />
         <Welcome />
@@ -53,7 +56,7 @@ const MainPage = () => {
         {/*<Cases />*/}
         <Team />
         <LinkBanner />
-        <Blog showText={false} />
+        <BlogForMain showText={false} />
         {/* <Education /> */}
         {/*<Internship /> */}
         <Trust />

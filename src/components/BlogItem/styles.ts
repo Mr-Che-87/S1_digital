@@ -1,8 +1,26 @@
 import styled from "styled-components";
+export const BlogImgWrapper = styled.div`
+position: relative; 
+width: 340px; 
+height: 260px;
+`;
 export const BlogImg = styled.img`
   width: 340px;
   height: 260px;
 `;
+export const BlogImgTitle = styled.h3`
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 54px 28px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+`;
+
 export const BlogItemTitle = styled.h3`
   margin-top: 5px;
   width: 340px;

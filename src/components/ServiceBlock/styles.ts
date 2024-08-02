@@ -26,4 +26,10 @@ export const ServiceBox = styled.article`
       -webkit-text-fill-color: transparent;
     }
   }
+  @media (max-width: 1024px) { 
+    width: 330px;
+  }
+  @media (max-width: 576px) { 
+    width: 300px;
+  }
 `;
