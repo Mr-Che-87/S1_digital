@@ -10,7 +10,7 @@ import {
 import { caseData } from "../../constans/caseData";
 import CaseBlock from "../CaseBlock/CaseBlock";
 import Button from "../Button/Button";
-const Cases = () => {
+const CasesForMain = () => {
   return (
     <CasesBox>
       <CasesTitleBox>
@@ -36,4 +36,4 @@ const Cases = () => {
   );
 };
 
-export default Cases;
+export default CasesForMain;

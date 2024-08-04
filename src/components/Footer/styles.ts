@@ -24,6 +24,7 @@ export const FooterContainer = styled.div`
   }
   @media (max-width: 700px) {
     align-items: center; 
+    margin-left: 0;
   }
 `;
 
@@ -212,10 +213,16 @@ export const ChartTitle = styled(FooterSubTitle)`
 export const FooterText = styled.p`
   max-width: 280px;
   color: ${({ theme }) => theme.colors.white};
+  @media (max-width: 700px) {
+    text-align: center;
+  }
 `;
 
 export const FooterLink = styled(Link)`
   color: ${({ theme }) => theme.colors.white};
+  @media (max-width: 700px) {
+    text-align: center;
+  }
 `;
 
 export const FooterContactLink = styled.a`

@@ -19,7 +19,7 @@ import ApplicationMenu from "./Components/ApplicationMenu/ApplicationMenu";
 import Footer from "../../components/Footer/Footer";
 
 
-// import Cases from "../../components/Cases/Cases";
+//import CasesForMain from "../../components/CasesForMain/CasesForMain";
 // import Education from "./Components/Education/Education";
 // import Services from "../../components/Services/Services";
 // import Internship from "./Components/Internship/Internship";
@@ -53,7 +53,7 @@ const MainPage = () => {
         <WeDoing /> 
         <Tariffs />
         {/*<Services />*/}
-        {/*<Cases />*/}
+        {/*<CasesForMain />*/}
         <Team />
         <LinkBanner />
         <BlogForMain showText={false} />

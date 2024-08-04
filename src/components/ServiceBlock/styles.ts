@@ -30,6 +30,6 @@ export const ServiceBox = styled.article`
     width: 330px;
   }
   @media (max-width: 576px) { 
-    width: 300px;
+    width: 290px;
   }
 `;

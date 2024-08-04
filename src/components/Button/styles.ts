@@ -21,6 +21,7 @@ export const ArrowSvg = styled.svg<StylesProps>`
         stroke: #8b4bed;
       `};
   }
+
 `;
 
 export const ButtonStyled = styled.button<StylesProps>`
@@ -125,4 +126,12 @@ export const ButtonStyled = styled.button<StylesProps>`
       }
     }
   }
+
+  @media (max-width: 700px) {
+    width: 250px;
+    padding: 20px 30px;  //чтоб стрелочка не пропадала
+    font-size: 14px;
+
+  }
+
 `;

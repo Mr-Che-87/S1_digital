@@ -8,6 +8,7 @@ import {
   BlogDate,
   BlogItemTitle,
   BlogItemText,
+  BlogButtonWrapper,
 } from "./styles";
 import { getCutText } from "../../services/utils/getCutText";
 
@@ -31,9 +32,11 @@ const BlogBlock = ({ title, text, date, link, img }: BlogBlockProps) => {
       <BlogItemTitle>{getCutText(title)}</BlogItemTitle>
       <BlogItemText>{text}</BlogItemText>
       <Link to={`/blog/${link}`}>
+        <BlogButtonWrapper>
         <Button variant="short" type="normal">
           Подробнее
         </Button>
+        </BlogButtonWrapper>
       </Link>
     </BlogItemBox>
   );

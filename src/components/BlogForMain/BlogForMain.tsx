@@ -4,13 +4,13 @@ import BlogBlock from "../BlogItem/BlogBlock";
 import {
   BlogItemsBox,
   BlogText,
-  BlogNavMenu,
+  BlogFilterMenu,
   BlogFilterButton,
   BlogTitle,
   BlogTitleBox,
   BlogBox,
   BlogButton
-} from "./styles";
+} from "../../pages/BlogsPage/styles";
 
 import { blogData } from "../../constans/blogData";
 //import { Link, useNavigate } from "react-router-dom";

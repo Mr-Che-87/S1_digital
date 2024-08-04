@@ -27,9 +27,9 @@ const CaseBlock = ({ title, Text, imgUrl, link }: CaseBlockProps) => {
           </CaseTitleShell>
           <CaseText>{Text}</CaseText>
         </CaseTextBox>
-        <Link to={`/case/${link}`}><Button variant="short" type="normal">
-          Подробнее
-        </Button></Link>
+        <Link to={`/case/${link}`}>
+          <Button variant="short" type="normal">Подробнее</Button>
+        </Link>
         
       </CaseInfoBlock>
     </CaseBox>

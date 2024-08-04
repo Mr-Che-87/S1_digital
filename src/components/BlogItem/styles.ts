@@ -3,10 +3,26 @@ export const BlogImgWrapper = styled.div`
 position: relative; 
 width: 340px; 
 height: 260px;
+  @media (max-width: 1024px) {
+      width: 290px;
+      height: 225px;
+  }
+  @media (max-width: 576px) {
+    width: 245px;
+    height: 190px;
+  }
 `;
 export const BlogImg = styled.img`
   width: 340px;
   height: 260px;
+  @media (max-width: 1024px) {
+      width: 290px;
+      height: 225px;
+  }
+  @media (max-width: 576px) {
+    width: 245px;
+    height: 190px;
+  }
 `;
 export const BlogImgTitle = styled.h3`
    position: absolute;
@@ -19,6 +35,17 @@ export const BlogImgTitle = styled.h3`
     font-weight: 700;
     line-height: 24px;
     text-align: left;
+
+    @media (max-width: 1024px) {
+    padding: 46px 24px; 
+    font-size: 17px; 
+    line-height: 21px; 
+    }
+    @media (max-width: 576px) {
+      padding: 43px 22px; 
+      font-size: 16px; 
+      line-height: 19px; 
+    }
 `;
 
 export const BlogItemTitle = styled.h3`
@@ -34,12 +61,34 @@ export const BlogItemTitle = styled.h3`
   font-weight: 700;
   line-height: 24px;
   text-align: left;
+
+  @media (max-width: 1024px) {
+    width: 292px; 
+    font-size: 17px; 
+    line-height: 21px; 
+  }
+    @media (max-width: 700px) {
+    height: auto; 
+  }
+
+  @media (max-width: 576px) {
+    width: 269px; 
+    font-size: 16px; 
+    line-height: 19px; 
+  }
 `;
 export const BlogItemText = styled.p`
   max-width: 340px;
   margin-top: 20px;
   margin-bottom: 60px;
   height: 242px;
+
+  @media (max-width: 1024px) {
+    max-width: 292px; 
+  }
+  @media (max-width: 576px) {
+    max-width: 269px; 
+  }
 `;
 export const BlogDate = styled.p`
   margin-top: 20px;
@@ -48,6 +97,10 @@ export const BlogDate = styled.p`
 export const CaseTitleShell = styled.div`
   background-clip: text;
   -webkit-background-clip: text;
+`;
+
+export const BlogButtonWrapper = styled.article`
+  padding-top: 100px;
 `;
 
 export const BlogItemBox = styled.article`
@@ -65,5 +118,13 @@ export const BlogItemBox = styled.article`
       background-image: ${({ theme }) => theme.colors.gradient};
       -webkit-text-fill-color: transparent;
     }
+  }
+  @media (max-width: 1024px) { 
+    width: 330px;
+    padding: 34px 17px 51px 17px; 
+  }
+  @media (max-width: 576px) { 
+    width: 280px;
+    padding: 31px 16px 47px 16px;
   }
 `;

@@ -7,13 +7,13 @@ import ApplicationForm from "../../components/ApplicationForm/ApplicationForm";
 import {
   BlogItemsBox,
   BlogText,
-  BlogNavMenu,
+  BlogFilterMenu,
   BlogFilterButton,
   BlogTitle,
   BlogTitleBox,
   BlogBox,
   BlogButton
-} from "../../components/BlogForMain/styles";
+} from "./styles";
 
 import BlogBlock from "../../components/BlogItem/BlogBlock";
 import Footer from "../../components/Footer/Footer";
@@ -56,7 +56,7 @@ const BlogsPage = () => {
         <br />
         маркетинговые системы, которые двигают ваш бизнес вперед
       </BlogText>
-      <BlogNavMenu>
+      <BlogFilterMenu>
         <BlogFilterButton onClick={() => handleFilterChange("all-directions")}>
           Все направления
         </BlogFilterButton>
@@ -81,7 +81,7 @@ const BlogsPage = () => {
         <BlogFilterButton onClick={() => handleFilterChange("analytics")}>
           Аналитика
         </BlogFilterButton> 
-      </BlogNavMenu>
+      </BlogFilterMenu>
       <BlogItemsBox>
         {filteredBlogData.slice(0, visibleCount).map((item, index) => (
           <BlogBlock

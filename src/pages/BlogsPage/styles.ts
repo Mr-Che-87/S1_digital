@@ -15,6 +15,12 @@ export const BlogTitleBox = styled.div`
   text-align: center;
   margin-bottom: 20px;
   //margin-top: 60px;
+  @media (max-width: 1024px) {
+    background-size: 300px;
+  }
+  @media (max-width: 576px) {
+    background-size: 210px;
+  }
 `;
 export const BlogTitle = styled.h1`
   padding-top: 75px;
@@ -22,6 +28,15 @@ export const BlogTitle = styled.h1`
   -webkit-background-clip: text;
   background-image: ${({ theme }) => theme.colors.gradient};
   -webkit-text-fill-color: transparent;
+  @media (max-width: 1024px) { 
+    padding-top: 60px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+  }
+  @media (max-width: 576px) {
+    padding-top: 40px;
+  }
 `;
 export const BlogText = styled.h2`
   text-align: center;
@@ -30,19 +45,32 @@ export const BlogText = styled.h2`
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 80px;
+
+  @media (max-width: 1024px) { 
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 60px;
+  }
+  @media (max-width: 576px) {
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 40px;
+  }
 `;
 
-export const BlogNavMenu = styled.div`
+export const BlogFilterMenu = styled.div`
   display: flex;
   flex-wrap: wrap; 
   gap: 10px;
   max-width: 1000px;
   margin: 10px 10px 40px 10px;
   padding-left: 30px;
-  //margin-bottom: 40px;
+
+  @media (max-width: 576px) {
+    padding-left: 5px;
+    margin-bottom: 20px;
+  }
 `;
-
-
 export const BlogFilterButton = styled.button`
   font-size: 16px;
   display: flex;
@@ -68,7 +96,14 @@ export const BlogFilterButton = styled.button`
     color: white;
     -webkit-text-fill-color: white; 
     background: ${({ theme }) => theme.colors.gradient};
-  } 
+  }
+  
+  @media (max-width: 1024px) { 
+    font-size: 14px;
+  }
+  @media (max-width: 576px) {
+    font-size: 12px;
+  }
 `;
 
 export const BlogItemsBox = styled.div`
@@ -79,7 +114,7 @@ export const BlogItemsBox = styled.div`
   flex-wrap: wrap;
   column-gap: 16px;
   row-gap: 40px;
-  justify-content: center;
+  justify-content: center;  
 `;
 
 

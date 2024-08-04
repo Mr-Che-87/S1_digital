@@ -6,6 +6,8 @@ export const CasesBox = styled.section`
   padding-right: calc(50% - 590px); 
 `;
 export const CasesTitleBox = styled.div`
+  display: flex;
+  justify-content: center;
   background-image: url("/images/сasesBackground.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -13,6 +15,15 @@ export const CasesTitleBox = styled.div`
   text-align: center;
   margin-bottom: 80px;
   margin-top: 60px;
+  @media (max-width: 1024px) {
+    background-size: 550px;
+    margin-bottom: 60px;
+  }
+  @media (max-width: 576px) {
+    background-image: url("/images/сasesSmallBackground.svg");
+    background-size: contain;
+    margin-bottom: 40px;
+  }
 `;
 export const CasesTitle = styled.h1`
   padding-top: 65px;
@@ -20,6 +31,16 @@ export const CasesTitle = styled.h1`
   -webkit-background-clip: text;
   background-image: ${({ theme }) => theme.colors.gradient};
   -webkit-text-fill-color: transparent;
+  
+  @media (max-width: 1024px) { 
+    padding-top: 40px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+  }
+  @media (max-width: 576px) {
+    max-width: 300px;
+  }
 `;
 export const CasesItemsBox = styled.div`
   display: flex;
@@ -28,6 +49,9 @@ export const CasesItemsBox = styled.div`
   row-gap: 40px;
   column-gap: 16px;
   margin-bottom: 120px;
+  @media (max-width: 576px) {
+    margin-bottom: 70px;
+  }
 `;
 export const CasesButtonBox = styled.div`
   display: flex;
