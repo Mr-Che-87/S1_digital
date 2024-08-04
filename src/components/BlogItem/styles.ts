@@ -81,13 +81,15 @@ export const BlogItemText = styled.p`
   max-width: 340px;
   margin-top: 20px;
   margin-bottom: 60px;
-  height: 242px;
+  height: 250px;
 
   @media (max-width: 1024px) {
     max-width: 292px; 
+   height: 330px;
   }
   @media (max-width: 576px) {
     max-width: 269px; 
+    height: auto;
   }
 `;
 export const BlogDate = styled.p`
@@ -100,7 +102,7 @@ export const CaseTitleShell = styled.div`
 `;
 
 export const BlogButtonWrapper = styled.article`
-  padding-top: 100px;
+ // padding-top: 100px;
 `;
 
 export const BlogItemBox = styled.article`
