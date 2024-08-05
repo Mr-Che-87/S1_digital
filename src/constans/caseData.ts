@@ -51,7 +51,7 @@ export const caseData = [
     text: "Продукция здорового питания",
     width: "640px",
     pageData: [
-      "/images/cases/ohmybalance/pagedata/0001.jpg",
+      "/images/cases/ohmybalance/ohmybalance.jpg",
       "/images/cases/ohmybalance/pagedata/0002.jpg",
       "/images/cases/ohmybalance/pagedata/0003.jpg",
       "/images/cases/ohmybalance/pagedata/0004.jpg",

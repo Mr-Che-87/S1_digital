@@ -7,6 +7,14 @@ export const ApplicationMenuBox = styled.section`
   overflow: hidden;
   margin-top: 180px;
   margin-bottom: 180px;
+  @media (max-width: 1024px) {
+    margin-bottom: 120px;
+    margin-top: 120px;
+  }
+  @media (max-width: 576px) {
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
 `;
 
 export const ApplicationMenuContent = styled.div`
@@ -16,8 +24,15 @@ export const ApplicationMenuContent = styled.div`
   padding-right: calc(50% - 590px); 
   padding-top: 120px;
   padding-bottom: 140px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  @media (max-width: 700px) {
+    margin-left: 0;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const ApplicationMenuBackground = styled.div`
@@ -31,6 +46,10 @@ export const ApplicationMenuBackground = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
+ @media (max-width: 700px) {
+    top: 50px;
+    height: 80%;
+  } 
 `;
 
 export const ApplicationMenuTitle = styled.h1`
@@ -43,6 +62,23 @@ export const ApplicationMenuTitle = styled.h1`
   padding-bottom: 60px;
   padding-left: 10px;
   padding-right: 10px;
+  @media (max-width: 1440px) {
+    font-size: 48px;
+  } 
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  @media (max-width: 700px) {
+    font-size: 28px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  @media (max-width: 470px) {
+    font-size: 20px;
+    line-height: normal;
+  }
 `;
 
 export const ApplicationMenuButton = styled.div`

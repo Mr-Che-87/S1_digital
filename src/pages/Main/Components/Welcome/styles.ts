@@ -11,8 +11,19 @@ export const WelcomeBox = styled.section`
 export const WelcomeContent = styled.div`
   padding-left: calc(50% - 590px);
   padding-right: calc(50% - 590px); 
-  margin-left: 10px;
+  margin-left: 20px;
   margin-right: 10px;
+  @media (max-width: 1024px) {
+    max-width: 800px;
+  }
+  @media (max-width: 700px) {
+    margin-left: 0;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 `;
 
 export const WelcomeBackground = styled.div`
@@ -33,6 +44,22 @@ export const WelcomeTitle = styled.h1`
   font-family: "OpenSansBold";
   line-height: 68px;
   color: white;
+  @media (max-width: 1440px) {
+    font-size: 48px;
+  }
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  @media (max-width: 700px) {
+    font-size: 28px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  @media (max-width: 460px) {
+    font-size: 22px;
+  }
 `;
 
 export const WelcomeDescriptionBox = styled.div`
@@ -40,6 +67,12 @@ export const WelcomeDescriptionBox = styled.div`
   flex-direction: column;
   margin-top: 27px;
   margin-bottom: 157px;
+  @media (max-width: 1024px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: 700px) {
+    text-align: center;
+  }
 `;
 
 export const WelcomeDescription = styled.div`
@@ -47,7 +80,15 @@ export const WelcomeDescription = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   color: white;
-  width: 580px;
+  max-width: 580px;
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+  @media (max-width: 700px) {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 `;
 
 

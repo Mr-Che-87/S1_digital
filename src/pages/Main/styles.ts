@@ -13,6 +13,8 @@ export const AbsoluteBackground = styled.div`
 `;
 
 
+
+
 //Статичная линия прозапас:
 export const LineStaticNew = styled.div`  
   position: absolute;

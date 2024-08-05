@@ -16,6 +16,11 @@ export const TariffsItemBlock1 = styled.div<StylesProps>`
   gap: 10px;
 //align-items: flex-start; 
   background: ${(props) => (props.$isSpecial ? 'rgba(1, 1, 53, 1)' : '#FFFFFF')}; 
+
+  @media (max-width: 1250px) {
+    padding: calc(40px * 0.8) calc(30px * 0.8);
+    gap: calc(10px * 0.8);
+  }
 `;
 
 
@@ -24,6 +29,10 @@ export const TariffsQuantity = styled.div<StylesProps>`
   font-size: 12px;
   align-self: self-end;
   color: ${(props) => (props.$isSpecial ? 'rgba(200, 200, 200)' : 'inherit')};
+
+  @media (max-width: 1250px) {
+    font-size: calc(12px * 0.8);
+  }
 `;
 
 export const TariffsItem = styled.div<StylesProps>`
@@ -42,6 +51,16 @@ export const TariffsItem = styled.div<StylesProps>`
       background-image: ${({ theme }) => theme.colors.gradient};
       -webkit-text-fill-color: transparent;
     }
+
+    @media (max-width: 1250px) {
+    font-size: calc(32px * 0.8);
+    padding-top: calc(10px * 0.8);
+    padding-left: calc(25px * 0.8);
+
+    span {
+      font-size: calc(32px * 0.8);
+    }
+  }
 `;
 
 export const TariffsEmployees = styled.p<StylesProps>`
@@ -51,6 +70,11 @@ export const TariffsEmployees = styled.p<StylesProps>`
   line-height: 140%;
   padding-left: 25px;
   color: ${(props) => (props.$isSpecial ? 'white' : 'inherit')};
+
+  @media (max-width: 1250px) {
+    font-size: calc(18px * 0.8);
+    padding-left: calc(25px * 0.8);
+  }
 `;
 
 export const TariffsServicesList = styled.ul<StylesProps>`
@@ -69,6 +93,18 @@ export const TariffsServicesList = styled.ul<StylesProps>`
   gap: 10px;
   color: ${(props) => (props.$isSpecial ? 'rgba(200, 200, 200)' : 'inherit')};
   }
+
+  @media (max-width: 1250px) {
+    font-size: 12px;
+    gap: calc(10px * 0.8);
+    padding: calc(10px * 0.8) calc(25px * 0.8);
+    margin-bottom: calc(20px * 0.8);
+
+    li {
+      padding: calc(10px * 0.8) calc(20px * 0.8);
+      gap: calc(10px * 0.8);
+    }
+  }
 `;
 
 
@@ -83,6 +119,10 @@ export const TariffsItemBlock2 = styled.div<StylesProps>`
  gap: 10px;
  background: ${(props) => (props.$isSpecial ? 'rgba(1, 1, 53, 1)' : '#FFFFFF')}; 
 
+ @media (max-width: 1250px) {
+    padding: calc(40px * 0.8) calc(30px * 0.8) calc(80px * 0.8) calc(30px * 0.8);
+    gap: calc(10px * 0.8);
+  }
 `;
 
 export const TariffsTitle = styled.h2<StylesProps>`
@@ -104,6 +144,11 @@ color: ${(props) => (props.$isSpecial ? 'white' : 'inherit')};
     bottom: 0; //линия находится внизу отступа
     left: 0;
   }
+@media (max-width: 1250px) {
+    font-size: calc(18px * 0.8);
+    padding-bottom: calc(20px * 0.8);
+    margin-bottom: calc(20px * 0.8);
+  }
 `;
 
 export const TariffsPointsList = styled.ul<StylesProps>`
@@ -115,6 +160,16 @@ export const TariffsPointsList = styled.ul<StylesProps>`
     margin-bottom: 20px;
     font-size: 18px;
     color: ${(props) => (props.$isSpecial ? 'rgba(200, 200, 200)' : 'inherit')};
+  }
+
+  @media (max-width: 1250px) {
+    margin-left: calc(20px * 0.8);
+    margin-bottom: calc(40px * 0.8);
+
+    li {
+      margin-bottom: calc(20px * 0.8);
+      font-size: calc(18px * 0.8);
+    }
   }
 `;
 
@@ -134,6 +189,12 @@ export const TariffsItemContainer = styled.li<StylesProps>`
   //      transform: scale(1.01);
   //    }  
   
+  @media (max-width: 1250px) {
+    max-width: calc(${(props) => props.$variant} * 0.8);
+    margin-right: calc(20px * 0.8);
+    margin-bottom: calc(20px * 0.8);
+  }
+
   
 `;
 

@@ -79,4 +79,10 @@ export const Wrapper = styled.div`
 //padding-left: calc(50% - 590px);
 //padding-right: calc(50% - 590px);
  margin-bottom: 180px;
+ @media (max-width: 1024px) {
+    margin-bottom: 120px;
+  }
+  @media (max-width: 576px) {
+    margin-bottom: 60px;
+  }
 `;

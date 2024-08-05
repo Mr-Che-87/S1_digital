@@ -12,6 +12,10 @@ import {
   HeadingDescription2,
   ServicesDescription,
   VkBlock,
+  MdashSpan,
+  DescriptionWrapper,
+  HeadingNoSpan,
+  HeadingMobSubTitle,
 } from "./styles";
 
 const Heading = () => {
@@ -22,9 +26,12 @@ const Heading = () => {
   return (
     <HeadingBox>
       <HeadingTitle>
-        <HeadingSpan>S1 DIGITAL</HeadingSpan> &mdash; агентство
+        <HeadingSpan>S1 DIGITAL </HeadingSpan>
+        <MdashSpan>&mdash;</MdashSpan> {/*&emsp;*/}
+        <HeadingNoSpan>агентство</HeadingNoSpan>    
       </HeadingTitle>
       <HeadingSubTitle>комплексного маркетинга</HeadingSubTitle>
+      <HeadingMobSubTitle>агентство комплексного маркетинга</HeadingMobSubTitle>
 
       <HeadingDescriptionBox>
         <HeadingDescription>
@@ -37,18 +44,18 @@ const Heading = () => {
           </HeadingDescription>
           
           <HeadingDescription2>
-          <VkBlock as={Link} to={"https://m.vk.com/s1digital"}>
+        <VkBlock as={Link} to={"https://m.vk.com/s1digital"}>
           <VkLink />
           <span>S1 digital</span>
         </VkBlock>
-          <div>
+        <DescriptionWrapper>
             <p>Привет! Мы S1 Digital - агентство</p>
             <ServicesDescription>
               Развиваем конкурентоспособность продукта и привлекаем клиентов
               из всех каналов коммуникаций. Формируем известность и репутацию
               бренда, улучшаем работу отдела продаж.
             </ServicesDescription>
-          </div>
+        </DescriptionWrapper>
           </HeadingDescription2>
               
       </HeadingDescriptionBox>

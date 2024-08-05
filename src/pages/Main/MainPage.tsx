@@ -19,7 +19,7 @@ import ApplicationMenu from "./Components/ApplicationMenu/ApplicationMenu";
 import Footer from "../../components/Footer/Footer";
 
 
-//import CasesForMain from "../../components/CasesForMain/CasesForMain";
+// import CasesForMain from "../../components/CasesForMain/CasesForMain";
 // import Education from "./Components/Education/Education";
 // import Services from "../../components/Services/Services";
 // import Internship from "./Components/Internship/Internship";
@@ -40,13 +40,14 @@ const MainPage = () => {
     <MainBox>
       
       <HeaderMain />
-      
-      <LineStaticNew />  
+       
+      {/* Статичная линия прозапас: */}
+      {/* <LineStaticNew />   */}   
    
-      {/* <AbsoluteBackground>  
-        <Lines/>
-      </AbsoluteBackground>   */}
-    
+       <AbsoluteBackground>  
+        <Lines/>    {/*адаптив анимированной линии сделан с костылями - куча медиаправил*/}
+      </AbsoluteBackground>  
+   
       <Wrapper>
         <Heading />
         <Welcome />

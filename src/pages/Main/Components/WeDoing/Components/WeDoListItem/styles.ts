@@ -20,6 +20,10 @@ export const WeDoItemContainer = styled.li`
         opacity: 1;
         transform: scale(1.05);
       }
+  @media (max-width: 576px) {
+    margin-left: 10px; 
+    margin-right: 10px;
+  }
 `;
 
 
@@ -45,6 +49,12 @@ export const WeDoItem = styled.li`
     font-size: 64px;
     font-family: 'OpenSansBold';
   }
+  @media (max-width: 576px) {
+    font-size: calc(24px * 0.8); 
+    &:before {
+      font-size: calc(64px * 0.9); 
+    }
+  }
 `;
 
 export const WeDoItemTextBox = styled.div` `;
@@ -54,6 +64,9 @@ export const WeDoItemBoldText = styled.p`
   font-size: 18px;
   font-family: 'OpenSansBold';
   line-height: 140%;
+  @media (max-width: 576px) {
+    font-size: calc(18px * 0.8); 
+  }
 `;
 export const WeDoItemText = styled.p<StylesProps>`
   color: #333;
@@ -63,4 +76,7 @@ export const WeDoItemText = styled.p<StylesProps>`
   max-width: ${(props) => props.$variant};
   margin-top: 10px;
   word-break: break-word;
+  @media (max-width: 576px) {
+    font-size: calc(18px * 0.8); 
+  }
 `;
