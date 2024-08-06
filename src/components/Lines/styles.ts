@@ -124,10 +124,8 @@ padding-bottom: calc(50% - 1590px);  */
         top: 580px; 
     }
     @media (max-width: 330px) {
-        top: 630px; 
+        top: 600px; 
     }
-    @media (max-width: 320px) {
-        top: 660px; 
-    }
+
 `;
     

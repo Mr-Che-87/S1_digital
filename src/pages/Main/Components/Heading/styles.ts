@@ -137,6 +137,9 @@ export const HeadingDescription2 = styled.div`
   @media (max-width: 382px) {
     margin-bottom: 160px;   //для анимированной Lines
     }
+    @media (max-width: 330px) {
+    margin-bottom: 80px;   //для анимированной Lines
+    }
 `;
 export const VkBlock = styled.div`
   background-clip: text;

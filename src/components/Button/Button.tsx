@@ -5,7 +5,7 @@ interface ButtonProps {
   children: ReactNode;
   variant: string;
   type: string;
-  handler?: () => void;
+  handler?: (e: React.MouseEvent<HTMLButtonElement>) => void;   // handler?: () => void; 
 }
 
 const Button = ({ children, handler, variant, type}: ButtonProps) => {

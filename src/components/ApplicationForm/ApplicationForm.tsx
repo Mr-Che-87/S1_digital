@@ -29,10 +29,47 @@ interface ApplicationFormProps {
 const ApplicationForm = ({ onClose }: ApplicationFormProps) => {
   const [selectedRadio, setSelectedRadio] = useState<string>("");
 
-  const handleRadioChange = (value: string) => {
-    setSelectedRadio(value);
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    direction: "",
+    message: "",
+    preferredContact: "",
+  });
+  const [responseMessage, setResponseMessage] = useState<string>("");
+
+  //ручка для обычных инпутов:
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [id]: value }));
   };
 
+  //ручка для радио-кнопки:
+  const handleRadioChange = (value: string) => {
+    setSelectedRadio(value);
+    setFormData((prevData) => ({ ...prevData, preferredContact: value }));
+  };
+
+  //API отправки на почту 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();  
+    const response = await fetch("/sendMail.php", {  //файл sendMail.php - в папке public!!
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+    if (data.status === "success") {
+      setResponseMessage("Сообщение успешно отправлено.");
+    } else {
+      setResponseMessage(data.message || "Ошибка при отправке сообщения.");
+    }
+  };
+
+  //закрытие по Esc:
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
@@ -60,10 +97,31 @@ const ApplicationForm = ({ onClose }: ApplicationFormProps) => {
           </TitleBox>
           <InputBlock>
             <InputTop>
-              <Input id="name" minWidth="260px" placeholder="Имя*" type="text" />
-              <Input id="name" minWidth="260px" placeholder="Телефон*" type="tel" />
+              <Input 
+                id="name" 
+                minWidth="260px" 
+                placeholder="Имя*" 
+                type="text" 
+                value={formData.name}
+                onChange={handleInputChange}
+              />
+              <Input 
+                id="phone" 
+                minWidth="260px" 
+                placeholder="Телефон*" 
+                type="tel" 
+                value={formData.phone}
+                onChange={handleInputChange}
+              />
             </InputTop>
-            <Input id="direction" minWidth="540px" placeholder="Интересующие Услуги*" type="text" />
+            <Input 
+              id="direction" 
+              minWidth="540px" 
+              placeholder="Интересующие Услуги*" 
+              type="text"
+              value={formData.direction}
+              onChange={handleInputChange} 
+            />
             <RadioBlockTitle>Свяжитесь со мной в:</RadioBlockTitle>
             <RadioBlock>
               <LabelBox htmlFor="whatsApp">
@@ -102,16 +160,19 @@ const ApplicationForm = ({ onClose }: ApplicationFormProps) => {
           </InputBlock>
         
         <ButtonBlock>
-          <Button variant="long" type="bold" handler={() => {}}>
+          <Button variant="long" type="bold" handler={(e) => handleSubmit(e)}>  {/*handler={handleSubmit}  или  handler={() => {handleSubmit}}  */}
             Отправить заявку
           </Button>
           <PersonalData>
             Нажимая кнопку, вы даете согласие на обработку персональных данных
           </PersonalData>
         </ButtonBlock>
+        {responseMessage && <div>{responseMessage}</div>}
       </FormContainer>
     </PopUp>
   );
 };
 
 export default ApplicationForm;
+
+
