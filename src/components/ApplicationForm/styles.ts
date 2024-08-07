@@ -68,7 +68,7 @@ export const InputBlock = styled.div`
 export const TitleBox = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 3%;
+  margin-bottom: 20px;
   align-items: center;
 `;
 export const FormTitle = styled.h3`
@@ -84,13 +84,13 @@ export const FormTitleText = styled.p`
   line-height: 139.99%;
 `;
 export const RadioBlockTitle = styled.p`
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 16px;
 `;
 export const RadioBlock = styled.div`
   display: flex;
   gap: 60px;
-  margin-top: 20px;
+  margin-top: 15px;
 `;
 export const FormRadio = styled.input`
   appearance: none;
@@ -122,7 +122,7 @@ export const ResponseMessage = styled.div<{ isError: boolean }>`
   color: ${({ isError }) => (isError ? "red" : "green")};
   font-size: 16px;
   text-align: center;
-  margin-top: 20px;
+  //margin-top: 20px;
 `;
 
 
