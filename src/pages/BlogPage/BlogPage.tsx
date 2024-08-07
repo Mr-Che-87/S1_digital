@@ -1,3 +1,4 @@
+import React from "react";
 import { useParams } from "react-router-dom";
 import { blogData } from "../../constans/blogData";
 import {
@@ -21,13 +22,13 @@ import {
   TextHeading,
   TitleHeading,
   VideoBlock,
-  VideoTexBox,
+  VideoBox,
+  VideoTextBox,
   VideoText,
   WrapperBlg,
 } from "./styles";
 import HeaderMain from "../../components/Header/HeaderMain";
 import Footer from "../../components/Footer/Footer";
-import React from "react";
 import { BlogsInterface } from "../../interfaces/blogsInterface";
 
 const BlogPage = () => {
@@ -113,20 +114,22 @@ const BlogPage = () => {
         </DataBox>
         {blogItem.video ? (
           <VideoBlock>
-            <div>
-              <iframe
-                width="400"
-                height="300"
-                src={blogItem.video}
-                title={blogItem.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              ></iframe>
-            </div>
-            <VideoTexBox>
+            <VideoBox>
+              <div>
+                <iframe
+                  width="400"
+                  height="300"
+                  src={blogItem.video}
+                  title={blogItem.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
+              </div>
+            </VideoBox>
+            <VideoTextBox>
               {blogItem.videoText?.map((item, index) => (
                 <VideoText key={index}>{item}</VideoText>
               ))}
-            </VideoTexBox>
+            </VideoTextBox>
           </VideoBlock>
         ) : blogItem.photo ? (
           <PhotoBlock>
