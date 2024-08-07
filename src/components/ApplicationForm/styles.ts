@@ -1,4 +1,8 @@
 import styled from "styled-components";
+
+
+
+
 export const PopUp = styled.div`
   position: fixed;
   z-index: 1000;
@@ -10,17 +14,24 @@ export const PopUp = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
+
+  @media (max-width: 700px) {
+
+
+  }
+
 `;
 export const FormContainer = styled.form`
  position: fixed;
  z-index: 1;
  width: 80%;
- height: 90%; 
+ // height: 95%;  
  max-width: 980px;
- max-height: 916px;  
+ max-height: 900px;  
  display: flex;
  flex-direction: column;
- padding: 40px;
+ padding: 25px;
+ padding-bottom: 20px;
  background-color: ${({ theme }) => theme.colors.white};
 `;
 export const CloseButton = styled.button`
@@ -57,24 +68,24 @@ export const InputBlock = styled.div`
 export const TitleBox = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin-bottom: 3%;
   align-items: center;
 `;
 export const FormTitle = styled.h3`
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 120%;
   text-transform: uppercase;
   margin-bottom: 10px;
 `;
 export const FormTitleText = styled.p`
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 139.99%;
-  text-transform: uppercase;
 `;
 export const RadioBlockTitle = styled.p`
-  margin-top: 40px;
+  margin-top: 20px;
+  font-size: 16px;
 `;
 export const RadioBlock = styled.div`
   display: flex;
@@ -88,7 +99,7 @@ export const ButtonBlock = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 40px;
 `;
 export const LabelBox = styled.label`
   display: flex;
@@ -99,6 +110,19 @@ export const PersonalData = styled.p`
   text-align: center;
   font-size: 16px;
   font-weight: 400;
+`;
+
+export const TextareaWrapper = styled.div`
+  margin-top: 20px;
+
+`;
+
+
+export const ResponseMessage = styled.div<{ isError: boolean }>`
+  color: ${({ isError }) => (isError ? "red" : "green")};
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
 `;
 
 

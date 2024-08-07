@@ -1,0 +1,24 @@
+.phoneInputWrapper {
+
+  
+  .form-control {
+    height: 64px;
+    font-size: 18px;
+    padding: 20px 40px;
+    border: 1px solid #333;
+    outline: none;
+    max-width: 540px;
+    width: var(--min-width, 260px); //замена  minWidth="260px" из вёрстки
+    
+    &:hover {
+      border-color: #8D31CC;;
+      border-image-slice: 1;
+    }
+    &:focus {
+      color: #8D31CC;
+      &::placeholder {
+        color: #8D31CC;
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars(trim($_POST['name']));
     $phone = htmlspecialchars(trim($_POST['phone']));
     $direction = htmlspecialchars(trim($_POST['direction']));
+    $message = htmlspecialchars(trim($_POST['message']));
     $preferredContact = htmlspecialchars(trim($_POST['preferredContact']));
 
     if (empty($name) || empty($phone) || empty($direction)) {
