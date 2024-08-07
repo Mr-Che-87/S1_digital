@@ -10,32 +10,38 @@ export const PopUp = styled.div`
   left: 0;
   height: 100vh;
   width: 100vw;
+  overflow-y: auto;  
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
-
-  @media (max-width: 700px) {
-
-
-  }
-
 `;
 export const FormContainer = styled.form`
  position: fixed;
  z-index: 1;
- width: 80%;
- // height: 95%;  
+ width: 60%;
  max-width: 980px;
  max-height: 900px;  
+  /* overflow-y: auto;  
+ overflow-x: hidden;  */
  display: flex;
  flex-direction: column;
  padding: 25px;
  padding-bottom: 20px;
  background-color: ${({ theme }) => theme.colors.white};
+ 
+ @media (max-width: 1024px) {
+  max-width: 560px;
+  width: 70%;
+ } 
+ @media (max-width: 576px) {
+  max-width: 400px;
+  width: 90%;
+ } 
 `;
 export const CloseButton = styled.button`
   position: absolute; 
+  z-index: 1100;
   top: 0; 
   right: -50px; 
   width: 40px; 
@@ -46,7 +52,11 @@ export const CloseButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+   @media (max-width: 700px) {
+    right: 0;
+    top: -55px; 
+  } 
+  `;
 export const CloseIcon = styled.span`
   font-size: 40px;
   color: white;
@@ -59,6 +69,9 @@ export const InputTop = styled.div`
   gap: 20px;
   justify-content: center;
   margin-bottom: 20px;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  } 
 `;
 export const InputBlock = styled.div`
   display: flex;
@@ -77,20 +90,41 @@ export const FormTitle = styled.h3`
   line-height: 120%;
   text-transform: uppercase;
   margin-bottom: 10px;
+  @media (max-width: 1024px) {
+    font-size: 24px;
+  }
+  @media (max-width: 576px) {
+    font-size: 22px;
+  }  
 `;
 export const FormTitleText = styled.p`
   font-size: 18px;
   font-weight: 400;
   line-height: 139.99%;
+  @media (max-width: 1024px) {
+    font-size: 16px;
+    text-align: center;
+  } 
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }  
 `;
 export const RadioBlockTitle = styled.p`
   margin-top: 15px;
   font-size: 16px;
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }  
 `;
 export const RadioBlock = styled.div`
   display: flex;
   gap: 60px;
   margin-top: 15px;
+
+  @media (max-width: 700px) {
+  flex-direction: column;
+  gap: 20px;
+ } 
 `;
 export const FormRadio = styled.input`
   appearance: none;
@@ -100,6 +134,9 @@ export const ButtonBlock = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
+  @media (max-width: 700px) {
+    margin-top: 25px;
+ } 
 `;
 export const LabelBox = styled.label`
   display: flex;
@@ -110,6 +147,12 @@ export const PersonalData = styled.p`
   text-align: center;
   font-size: 16px;
   font-weight: 400;
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  } 
+  @media (max-width: 576px) {
+    font-size: 12px;
+  } 
 `;
 
 export const TextareaWrapper = styled.div`
@@ -123,6 +166,12 @@ export const ResponseMessage = styled.div<{ isError: boolean }>`
   font-size: 16px;
   text-align: center;
   //margin-top: 20px;
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  } 
+  @media (max-width: 576px) {
+    font-size: 12px;
+  } 
 `;
 
 

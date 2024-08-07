@@ -1,4 +1,4 @@
-import { SvgBox } from "./styles";
+import { SvgBox, WhatsAppText } from "./styles";
 
 const WhatsApp = () => {
   return (
@@ -25,7 +25,7 @@ const WhatsApp = () => {
           </clipPath>
         </defs>
       </svg>
-      <p>WhatsApp</p>
+      <WhatsAppText>WhatsApp</WhatsAppText>
     </SvgBox>
   );
 };

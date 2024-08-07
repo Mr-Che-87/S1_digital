@@ -1,7 +1,9 @@
 import styled from "styled-components";
+
 interface StylesProps {
   readonly $minWidth: string;
 }
+
 export const InputStyled = styled.input<StylesProps>`
   font-size: 18px;
   padding: 20px 40px;
@@ -19,6 +21,17 @@ export const InputStyled = styled.input<StylesProps>`
     background-image: ${({ theme }) => theme.colors.gradient};
     -webkit-text-fill-color: transparent;
   }
+
+  @media (max-width: 1024px) {
+    width: 360px;
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+  @media (max-width: 576px) {
+    width: 260px;
+    font-size: 14px;
+    padding: 10px;
+  } 
 `;
 
 export const SelectStyled = styled.select<StylesProps>`
@@ -38,6 +51,18 @@ export const SelectStyled = styled.select<StylesProps>`
     background-image: ${({ theme }) => theme.colors.gradient};
     -webkit-text-fill-color: transparent;
   }
+
+  @media (max-width: 1024px) {
+    width: 360px;
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+  @media (max-width: 576px) {
+    width: 260px;
+    font-size: 14px;
+    padding: 12px;
+    padding-left: 5px;
+  } 
 `;
 
 export const TextAreaStyled = styled.textarea<StylesProps>`
@@ -61,4 +86,16 @@ export const TextAreaStyled = styled.textarea<StylesProps>`
       color: #8D31CC;
     }
   }
+
+  @media (max-width: 1024px) {
+    width: 360px;
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+  @media (max-width: 576px) {
+    width: 260px;
+    font-size: 14px;
+    padding: 10px;
+  } 
 `;
+

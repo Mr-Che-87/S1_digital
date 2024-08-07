@@ -126,12 +126,15 @@ export const ButtonStyled = styled.button<StylesProps>`
       }
     }
   }
-
+  @media (max-width: 1024px) {
+    max-width: 400px;
+    padding: 20px 60px;  //чтоб стрелочка не пропадала
+    
+  }
   @media (max-width: 700px) {
     width: 250px;
     padding: 20px 30px;  //чтоб стрелочка не пропадала
     font-size: 14px;
-
   }
 
 `;

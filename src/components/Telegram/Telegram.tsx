@@ -1,4 +1,4 @@
-import { SvgBox } from "./styles";
+import { SvgBox, TelegramText } from "./styles";
 
 const Telegram = () => {
   return (
@@ -23,7 +23,7 @@ const Telegram = () => {
           </clipPath>
         </defs>
       </svg>
-      <p>Telegram</p>
+      <TelegramText>Telegram</TelegramText>
     </SvgBox>
   );
 };

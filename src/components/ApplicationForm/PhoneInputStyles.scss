@@ -6,9 +6,10 @@
     font-size: 18px;
     padding: 20px 40px;
     border: 1px solid #333;
+    border-radius: 0%;
     outline: none;
     max-width: 540px;
-    width: var(--min-width, 260px); //замена  minWidth="260px" из вёрстки
+    width: 260px; //замена  minWidth="260px" из вёрстки
     
     &:hover {
       border-color: #8D31CC;;
@@ -20,5 +21,19 @@
         color: #8D31CC;
       }
     }
+
+    @media (max-width: 1024px) {
+      width: 360px;
+      height: 40px;
+      font-size: 16px;
+      padding-left: 50px;
+    } 
+
+    @media (max-width: 576px) {
+      width: 260px;
+      font-size: 14px;
+      padding-left: 50px;
+    } 
   }
 }
+
