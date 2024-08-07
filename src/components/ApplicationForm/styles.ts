@@ -10,20 +10,20 @@ export const PopUp = styled.div`
   left: 0;
   height: 100vh;
   width: 100vw;
-  overflow-y: auto;  
+  overflow: auto;  
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
 `;
 export const FormContainer = styled.form`
- position: fixed;
+ position: relative;
  z-index: 1;
  width: 60%;
  max-width: 980px;
  max-height: 900px;  
-  /* overflow-y: auto;  
- overflow-x: hidden;  */
+ //overflow-y: auto;   //не работает - CloseButton становится невидимым 
+ //overflow-x: hidden;  //не работает - CloseButton становится невидимым 
  display: flex;
  flex-direction: column;
  padding: 25px;
@@ -54,12 +54,16 @@ export const CloseButton = styled.button`
   align-items: center;
    @media (max-width: 700px) {
     right: 0;
-    top: -55px; 
+    top: 5px; 
   } 
   `;
 export const CloseIcon = styled.span`
   font-size: 40px;
   color: white;
+  @media (max-width: 700px) {
+    font-size: 25px;
+    color: black; 
+  } 
 `;
 
 
