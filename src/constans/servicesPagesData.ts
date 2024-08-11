@@ -1103,6 +1103,8 @@ export const contentMarketingData = [
     ],
   },
 ];
+
+
 export const contentStrategyData = [
   {
     title: "Наш подход",
@@ -1289,6 +1291,8 @@ export const contentStrategyData = [
     ],
   },
 ];
+
+
 export const smmData = [
   {
     title: "",

@@ -56,7 +56,10 @@ const AppRoutes: React.FunctionComponent<AppRoutesProps> = () => {
           path="/contentStrategy"
           element={<ContentStrategyPage />}
         ></Route>
-        <Route path="/smm" element={<SmmPage />}></Route>
+        <Route 
+          path="/smm" 
+          element={<SmmPage />}
+        ></Route>
         <Route
           path="/videoProduction"
           element={<VideoProductionPage />}
