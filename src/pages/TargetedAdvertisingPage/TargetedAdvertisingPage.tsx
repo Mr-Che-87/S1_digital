@@ -15,6 +15,11 @@ const TargetedAdvertisingPage = () => {
   const isOpenServiceOpen = useSelector(
     (state: RootState) => state.openServiceSlice.open
   );
+  
+  // лог для отладки:
+   console.log("isOpenServiceOpen:", isOpenServiceOpen);
+
+
   return (
     <main>
       <HeaderMain />
