@@ -1,3 +1,23 @@
+import HeaderMain from "../../components/Header/HeaderMain";
+import Footer from "../../components/Footer/Footer";
+
+const SmmPage = () => {
+  return (
+    <main>
+      <HeaderMain />
+      <h1>Тестовая страница SMM</h1>
+      {/* Закомментируйте остальные компоненты для тестирования */}
+      {/* <ServicePageAccordion title="Test" text="Test" background="" url="" linkText="Test" /> */}
+      <Footer />
+    </main>
+  );
+};
+
+export default SmmPage;
+
+
+
+/*
 import { useSelector } from "react-redux";
 import HeaderMain from "../../components/Header/HeaderMain";
 import ServicePageAccordion from "../../components/ServicePageAccordion/ServicePageAccordion";
@@ -102,3 +122,4 @@ console.log("isOpenServiceOpen:", isOpenServiceOpen);
 };
 
 export default SmmPage;
+*/
